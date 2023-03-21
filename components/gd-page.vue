@@ -75,10 +75,10 @@ export default {
     parallaxCallback() {
       const scrollPosition = window.pageYOffset;
 
-      // Parallax the header image.
+      // Parallax and fade the header image.
       const parallax = this.$refs.parallax;
       parallax.style.transform = `translateY(${0 - scrollPosition * 0.3}px)`;
-      parallax.style.opacity = 1 - scrollPosition * 0.003;
+      parallax.style.opacity = 1 - scrollPosition * 0.01;
 
       // Fade in the menu.
       const menu = this.$refs.menu;

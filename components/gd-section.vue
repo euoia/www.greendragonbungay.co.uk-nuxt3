@@ -5,9 +5,22 @@
     </div>
 
     <div class="content">
-      <h1>{{ title }}</h1>
-      <img src="/images/barley.svg" alt="Barley" width="50" height="50" />
-      <p><slot /></p>
+      <div class="content-title">
+        <h1>{{ title }}</h1>
+        <img
+          class="separator"
+          src="/images/hops-separator.png"
+          alt="Text separator"
+        />
+      </div>
+
+      <div class="content-body">
+        <slot />
+      </div>
+
+      <div class="content-footer">
+        <div class="cta"><a href="/learn-more">Learn more</a></div>
+      </div>
     </div>
   </section>
 </template>
@@ -89,6 +102,30 @@ export default {
     align-items: center;
     text-align: center;
     line-height: 1.6em;
+
+    .content-title,
+    .content-footer {
+      flex: 0;
+    }
+
+    .content-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      gap: 1em;
+    }
+
+    .content-body {
+      flex: 1;
+    }
   }
+}
+
+.separator {
+  width: 40px;
+  height: 40px;
+  color: var(--mid-grey);
 }
 </style>
