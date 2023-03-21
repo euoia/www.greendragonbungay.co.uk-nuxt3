@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="gd-page">
+    <div ref="pageArea" class="gd-page">
       <header class="hero-header">
         <div class="hero-image">
           <img
@@ -17,7 +17,7 @@
           </div>
         </div>
         -->
-        <div class="text-overlay-box">
+        <div ref="parallax" class="text-overlay-box" :style="parallaxStyle">
           <img
             class="logo-image"
             src="~/assets/images/green-dragon-bungay-logo.png"
@@ -40,6 +40,39 @@
     </header>
   </div>
 </template>
+
+<script>
+export default {
+  props: {},
+  data() {
+    return {
+      parallaxObserver: null,
+    };
+  },
+  computed: {
+    parallaxStyle() {
+      return {
+        transform: `translateY(${window.scrollY * 0.5}px)`,
+      };
+    },
+  },
+  watch: {},
+  mounted() {
+    console.log(`Before mounted`);
+
+    window.addEventListener("scroll", this.parallaxCallback);
+  },
+  methods: {
+    parallaxCallback() {
+      const parallax = this.$refs.parallax;
+      const scrollPosition = window.pageYOffset;
+
+      parallax.style.transform = `translateY(${0 - scrollPosition * 0.3}px)`;
+      parallax.style.opacity = 1 - scrollPosition * 0.003;
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .menu {
