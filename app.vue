@@ -1,11 +1,16 @@
 <template>
   <gd-page>
-  <section>
-    <h1>About the Green Dragon</h1>
-    <p>
-      The Green Dragon is a pub in Bree, located in the Shire. It is the
-      only inn in the village, and is run by the innkeeper, Drogo Baggins.
-    </p>
-  </section>
+    <gd-section title="About" img-src="/images/little-beer-festival-square.png">
+      We have been microbrewing beer from whole hops and locally sourced malt in
+      Bungay since 1991.
+    </gd-section>
+
+    <gd-section
+      title="Food Trucks"
+      img-src="/images/wood-fired-pizza-truck-square.png"
+    >
+      We have been microbrewing beer from whole hops and locally sourced malt in
+      Bungay since 1991.
+    </gd-section>
   </gd-page>
 </template>

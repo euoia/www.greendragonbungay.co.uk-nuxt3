@@ -1,0 +1,41 @@
+body {
+  --green-dragon-green: #355733;
+  --header-font: cooper-black-std, serif;
+  --dark-header-color: #2B3C26;
+  --light-header-color: #A3A2A3;
+  --body-font:"profile-pro", sans-serif;
+  --body-font-size: 18px;
+  --body-color: #444449;
+
+  background-color: var(--green-dragon-green);
+  //background: url("~/assets/images/background.png");
+  //background-size: 3200px 3200px;
+
+  color: black;
+
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-style: normal;
+
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--light-header-color);
+  margin: 0;
+}
+
+p { 
+  font-size: var(--body-font-size);
+}
