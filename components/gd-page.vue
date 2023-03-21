@@ -21,7 +21,7 @@
           <img
             class="logo-image"
             src="~/assets/images/green-dragon-bungay-logo.png"
-            alt="Green Dragon Inn"
+            alt="Green Dragon, Bungay, Suffolk, logo"
           />
         </div>
       </header>
@@ -31,12 +31,20 @@
       </div>
     </div>
 
-    <header class="menu">
-      <div>About</div>
-      <div>Menu</div>
-      <div>Gallery</div>
-      <div>Events</div>
-      <div>Contact</div>
+    <header ref="menu" class="menu">
+      <div class="left menu-section">
+        <div>History</div>
+        <div>Food</div>
+        <div>Beer</div>
+      </div>
+
+      <div ref="menuHeader" class="center menu-section">GREEN DRAGON</div>
+
+      <div class="right menu-section">
+        <div>Events</div>
+        <div>Gallery</div>
+        <div>Contact</div>
+      </div>
     </header>
   </div>
 </template>
@@ -61,14 +69,34 @@ export default {
     console.log(`Before mounted`);
 
     window.addEventListener("scroll", this.parallaxCallback);
+    this.parallaxCallback();
   },
   methods: {
     parallaxCallback() {
-      const parallax = this.$refs.parallax;
       const scrollPosition = window.pageYOffset;
 
+      // Parallax the header image.
+      const parallax = this.$refs.parallax;
       parallax.style.transform = `translateY(${0 - scrollPosition * 0.3}px)`;
       parallax.style.opacity = 1 - scrollPosition * 0.003;
+
+      // Fade in the menu.
+      const menu = this.$refs.menu;
+      menu.style.height = `${Math.max(80 - scrollPosition * 2.5, 50)}px`;
+
+      menu.style.backgroundColor = `rgba(255, 255, 255, ${Math.min(
+        (scrollPosition - 10) * 0.01,
+        1
+      )})`;
+
+      const color = Math.max(
+        255 - Math.min((scrollPosition - 80) * 10.5, 200),
+        0
+      );
+      menu.style.color = `rgba(${color}, ${color}, ${color}, 1)`;
+
+      const menuHeader = this.$refs.menuHeader;
+      menuHeader.style.opacity = Math.min(scrollPosition * 0.01, 1);
     },
   },
 };
@@ -76,8 +104,8 @@ export default {
 
 <style lang="scss" scoped>
 .menu {
-  height: 50px;
-  position: absolute;
+  height: 80px;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -88,7 +116,35 @@ export default {
   align-items: center;
   font-size: 1.5em;
   font-family: var(--header-font);
-  color: white;
+  color: black;
+  gap: 0.5em;
+
+  .menu-section {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    &.left,
+    &.right {
+      font-family: var(--body-font);
+      font-size: 1em;
+      //color: var(--dark-grey);
+    }
+
+    &.left,
+    &.right,
+    &.center {
+      flex: 1;
+    }
+
+    &.center {
+      color: black;
+      line-height: 1em;
+    }
+  }
 }
 
 .gd-page {
