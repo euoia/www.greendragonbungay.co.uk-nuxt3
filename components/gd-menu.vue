@@ -196,8 +196,6 @@ export default {
     @media (min-width: $menu-mobile-breakpoint) {
       display: none;
     }
-    color: black;
-
     .hamburger-container {
       position: absolute;
       right: 10px;
