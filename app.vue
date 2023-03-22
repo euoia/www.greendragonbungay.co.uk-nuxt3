@@ -66,7 +66,10 @@
     <gd-section
       title="Food"
       :images="[
-        { src: '/images/poutine.jpg', alt: 'Canadian Poutine' },
+        {
+          src: '/images/canadian-poutine-dripping-into-a-bowl-of-fries.jpg',
+          alt: 'Canadian Poutine dripping into a bowl of fries',
+        },
         {
           src: '/images/overhead-shot-of-food-square.jpg',
           alt: 'Overhead shot of food',
