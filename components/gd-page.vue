@@ -8,19 +8,11 @@
             alt="Green Dragon Bungay - pump clips on the bar - Chaucer, Bridge Street, Gold"
           />
         </div>
-        <!--
-        <div class="text-overlay-box">
-          <div class="text-overlay">
-            <div>Green Dragon</div>
-            <div>Free House &amp;</div>
-            <div>Brewery</div>
-          </div>
-        </div>
-        -->
+
         <div ref="parallax" class="text-overlay-box" :style="parallaxStyle">
           <img
             class="logo-image"
-            src="~/assets/images/green-dragon-bungay-logo.png"
+            src="/images/green-dragon-bungay-logo-with-dragon-white.png"
             alt="Green Dragon, Bungay, Suffolk, logo"
           />
         </div>
@@ -125,6 +117,8 @@ export default {
 
     .logo-image {
       height: 80%;
+      max-width: 90%;
+      object-fit: contain;
     }
 
     .text-overlay {
