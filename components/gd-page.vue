@@ -66,10 +66,11 @@ export default {
   },
   watch: {},
   mounted() {
-    console.log(`Before mounted`);
-
-    window.addEventListener("scroll", this.parallaxCallback);
-    this.parallaxCallback();
+    if (window) {
+      // Only do this client-side.
+      window.addEventListener("scroll", this.parallaxCallback);
+      this.parallaxCallback();
+    }
   },
   methods: {
     parallaxCallback() {
