@@ -59,7 +59,7 @@ export default {
   },
   computed: {
     parallaxStyle() {
-      if (window === undefined) {
+      if (process.client === false) {
         return {};
       }
 
@@ -70,11 +70,13 @@ export default {
   },
   watch: {},
   mounted() {
-    if (window) {
+    if (process.client === false) {
       // Only do this client-side.
-      window.addEventListener("scroll", this.parallaxCallback);
-      this.parallaxCallback();
+      return;
     }
+
+    window.addEventListener("scroll", this.parallaxCallback);
+    this.parallaxCallback();
   },
   methods: {
     parallaxCallback() {
@@ -82,6 +84,7 @@ export default {
 
       // Parallax and fade the header image.
       const parallax = this.$refs.parallax;
+
       if (parallax) {
         parallax.style.transform = `translateY(${0 - scrollPosition * 0.3}px)`;
         parallax.style.opacity = Math.max(1 - scrollPosition * 0.005, 0);
@@ -89,46 +92,47 @@ export default {
 
       // Fade in the menu.
       const menu = this.$refs.menu;
+      if (menu) {
+        const animationStart = 40;
+        const animationEnd = 100;
 
-      const animationStart = 40;
-      const animationEnd = 100;
+        const animationPct = Math.min(
+          Math.max(
+            (scrollPosition - animationStart) / (animationEnd - animationStart),
+            0
+          ),
+          1
+        );
 
-      const animationPct = Math.min(
-        Math.max(
-          (scrollPosition - animationStart) / (animationEnd - animationStart),
-          0
-        ),
-        1
-      );
+        const getAnimatedValue = (start, end) => {
+          return start + (end - start) * animationPct;
+        };
 
-      const getAnimatedValue = (start, end) => {
-        return start + (end - start) * animationPct;
-      };
+        const menuStartHeight = 100;
+        const menuEndHeight = 50;
+        const menuHeight = getAnimatedValue(menuStartHeight, menuEndHeight);
+        menu.style.height = `${menuHeight}px`;
 
-      const menuStartHeight = 100;
-      const menuEndHeight = 50;
-      const menuHeight = getAnimatedValue(menuStartHeight, menuEndHeight);
-      menu.style.height = `${menuHeight}px`;
+        const menuBackgroundColorOpacityStart = 0;
+        const menuBackgroundColorOpacityEnd = 1;
+        const menuBackgroundColorOpacity = getAnimatedValue(
+          menuBackgroundColorOpacityStart,
+          menuBackgroundColorOpacityEnd
+        );
 
-      const menuBackgroundColorOpacityStart = 0;
-      const menuBackgroundColorOpacityEnd = 1;
-      const menuBackgroundColorOpacity = getAnimatedValue(
-        menuBackgroundColorOpacityStart,
-        menuBackgroundColorOpacityEnd
-      );
+        menu.style.backgroundColor = `rgba(255, 255, 255, ${menuBackgroundColorOpacity})`;
 
-      menu.style.backgroundColor = `rgba(255, 255, 255, ${menuBackgroundColorOpacity})`;
+        const menuColorStart = 255;
+        const menuColorEnd = 0;
+        const color = getAnimatedValue(menuColorStart, menuColorEnd);
 
-      const menuColorStart = 255;
-      const menuColorEnd = 0;
-      const color = getAnimatedValue(menuColorStart, menuColorEnd);
+        menu.style.color = `rgba(${color}, ${color}, ${color}, 1)`;
 
-      menu.style.color = `rgba(${color}, ${color}, ${color}, 1)`;
+        // TODO: The link color should really be Green Dragon Green.
 
-      // TODO: The link color should really be Green Dragon Green.
-
-      const menuHeader = this.$refs.menuHeader;
-      menuHeader.style.opacity = Math.min(scrollPosition * 0.01, 1);
+        const menuHeader = this.$refs.menuHeader;
+        menuHeader.style.opacity = Math.min(scrollPosition * 0.01, 1);
+      }
     },
   },
 };
