@@ -59,6 +59,10 @@ export default {
   },
   computed: {
     parallaxStyle() {
+      if (window === undefined) {
+        return {};
+      }
+
       return {
         transform: `translateY(${window.scrollY * 0.5}px)`,
       };
