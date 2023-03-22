@@ -138,6 +138,7 @@ export default {
       color: var(--green-dragon-green);
       font-family: var(--header-font);
       text-decoration: none;
+      transition: color 0.25s ease-out;
 
       &:hover {
         color: var(--green-dragon-dark-green);

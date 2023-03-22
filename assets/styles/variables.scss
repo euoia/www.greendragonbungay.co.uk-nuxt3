@@ -1,2 +1,6 @@
 // CSS Variables are not supported with Media Queries, use SASS instead.
 $one-col-breakpoint: 800px;
+
+// This really depends on the amount of content in the menu, so isn't easy to
+// do dynamically without using JavaScript.
+$menu-mobile-breakpoint: 780px;
