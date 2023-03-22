@@ -6,10 +6,13 @@ body {
   --header-font: cooper-black-std, serif;
   --light-header-color: #a3a2a3;
   --body-font: "profile-pro", sans-serif;
-  --body-font-size: 18px;
+  --body-font-size: 22px;
   --body-color: #444449;
+  --body-background-color: #ffffff;
 
-  background-color: white;
+  --max-page-width: 1400px;
+
+  background-color: var(--body-background-color);
   //background: url("~/assets/images/background.png");
   //background-size: 3200px 3200px;
 
@@ -23,7 +26,7 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 h1,
@@ -44,32 +47,8 @@ p {
 
 a {
   color: var(--green-dragon-green);
-  font-family: var(--header-font);
-  text-decoration: none;
 
   &:hover {
     color: var(--green-dragon-dark-green);
-  }
-
-  // Animate an underline on hover.
-  position: relative;
-  font-variant: small-caps;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  &:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
   }
 }

@@ -33,17 +33,17 @@
 
     <header ref="menu" class="menu">
       <div class="left menu-section">
-        <div>History</div>
-        <div>Food</div>
-        <div>Beer</div>
+        <div><a>Pub</a></div>
+        <div><a>Food</a></div>
+        <div><a>Brewery</a></div>
       </div>
 
       <div ref="menuHeader" class="center menu-section">GREEN DRAGON</div>
 
       <div class="right menu-section">
-        <div>Events</div>
-        <div>Gallery</div>
-        <div>Contact</div>
+        <div><a>Events</a></div>
+        <div><a>Gallery</a></div>
+        <div><a>Contact</a></div>
       </div>
     </header>
   </div>
@@ -77,23 +77,50 @@ export default {
 
       // Parallax and fade the header image.
       const parallax = this.$refs.parallax;
-      parallax.style.transform = `translateY(${0 - scrollPosition * 0.3}px)`;
-      parallax.style.opacity = 1 - scrollPosition * 0.01;
+      if (parallax) {
+        parallax.style.transform = `translateY(${0 - scrollPosition * 0.3}px)`;
+        parallax.style.opacity = Math.max(1 - scrollPosition * 0.005, 0);
+      }
 
       // Fade in the menu.
       const menu = this.$refs.menu;
-      menu.style.height = `${Math.max(80 - scrollPosition * 2.5, 50)}px`;
 
-      menu.style.backgroundColor = `rgba(255, 255, 255, ${Math.min(
-        (scrollPosition - 10) * 0.01,
+      const animationStart = 40;
+      const animationEnd = 100;
+
+      const animationPct = Math.min(
+        Math.max(
+          (scrollPosition - animationStart) / (animationEnd - animationStart),
+          0
+        ),
         1
-      )})`;
-
-      const color = Math.max(
-        255 - Math.min((scrollPosition - 80) * 10.5, 200),
-        0
       );
+
+      const getAnimatedValue = (start, end) => {
+        return start + (end - start) * animationPct;
+      };
+
+      const menuStartHeight = 100;
+      const menuEndHeight = 50;
+      const menuHeight = getAnimatedValue(menuStartHeight, menuEndHeight);
+      menu.style.height = `${menuHeight}px`;
+
+      const menuBackgroundColorOpacityStart = 0;
+      const menuBackgroundColorOpacityEnd = 1;
+      const menuBackgroundColorOpacity = getAnimatedValue(
+        menuBackgroundColorOpacityStart,
+        menuBackgroundColorOpacityEnd
+      );
+
+      menu.style.backgroundColor = `rgba(255, 255, 255, ${menuBackgroundColorOpacity})`;
+
+      const menuColorStart = 255;
+      const menuColorEnd = 0;
+      const color = getAnimatedValue(menuColorStart, menuColorEnd);
+
       menu.style.color = `rgba(${color}, ${color}, ${color}, 1)`;
+
+      // TODO: The link color should really be Green Dragon Green.
 
       const menuHeader = this.$refs.menuHeader;
       menuHeader.style.opacity = Math.min(scrollPosition * 0.01, 1);
@@ -104,7 +131,6 @@ export default {
 
 <style lang="scss" scoped>
 .menu {
-  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -116,7 +142,6 @@ export default {
   align-items: center;
   font-size: 1.5em;
   font-family: var(--header-font);
-  color: black;
   gap: 0.5em;
 
   .menu-section {
@@ -127,11 +152,15 @@ export default {
     align-items: center;
     text-align: center;
 
+    a {
+      font-variant: small-caps;
+      font-size: 0.8em;
+      color: inherit;
+    }
+
     &.left,
     &.right {
-      font-family: var(--body-font);
       font-size: 1em;
-      //color: var(--dark-grey);
     }
 
     &.left,
@@ -141,7 +170,6 @@ export default {
     }
 
     &.center {
-      color: black;
       line-height: 1em;
     }
   }
@@ -150,13 +178,13 @@ export default {
 .gd-page {
   display: flex;
   flex-direction: column;
+  gap: 2em;
 
   .content {
     margin: auto;
-    max-width: 900px;
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 2em;
   }
 }
 
