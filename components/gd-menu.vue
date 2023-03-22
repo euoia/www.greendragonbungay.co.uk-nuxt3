@@ -196,6 +196,7 @@ export default {
     @media (min-width: $menu-mobile-breakpoint) {
       display: none;
     }
+
     .hamburger-container {
       position: absolute;
       right: 10px;
@@ -214,6 +215,7 @@ export default {
     }
 
     .full-screen-menu {
+      color: black;
       width: 0;
       height: 100%;
       position: fixed;
