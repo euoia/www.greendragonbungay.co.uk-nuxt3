@@ -85,7 +85,7 @@
       ]"
     >
       <gd-p
-        >Chef Ian Cook has worked hard to create an eclectic pub menu using
+        >Chef Ian Cooke has worked hard to create an eclectic pub menu using
         excellent ingredients including artisan Portugeuse bread, and featuring
         international classics such as Canadian Poutine.
       </gd-p>
