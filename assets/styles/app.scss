@@ -1,8 +1,9 @@
 body {
   --green-dragon-green: #355733;
   --green-dragon-dark-green: #2b3c26;
-  --dark-grey: #444449;
+  --light-grey: #f7f6f8;
   --mid-grey: #a3a2a3;
+  --dark-grey: #38404a;
   --header-font: cooper-black-std, serif;
   --light-header-color: #a3a2a3;
   --body-font: "profile-pro", sans-serif;
@@ -51,4 +52,8 @@ a {
   &:hover {
     color: var(--green-dragon-dark-green);
   }
+}
+
+:deep(.ampm) {
+  font-variant: small-caps;
 }

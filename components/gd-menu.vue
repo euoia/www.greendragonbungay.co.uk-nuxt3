@@ -72,7 +72,7 @@ export default {
       this.showingMenu = !this.showingMenu;
     },
     parallaxMenu(menu) {
-      if (menu === undefined) {
+      if (menu === undefined || menu === null) {
         return;
       }
 
