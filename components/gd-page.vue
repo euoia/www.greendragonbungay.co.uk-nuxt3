@@ -1,19 +1,22 @@
+<script setup>
+import {
+  email,
+  phoneNumber,
+  addressLines,
+  copyrightBusiness,
+  createdBy,
+} from "@/assets/content/business.js";
+</script>
+
 <template>
   <div class="gd-page">
     <header class="hero-header">
       <div class="hero-image">
-        <img
-          src="~/assets/images/banner.jpg"
-          alt="Green Dragon Bungay - pump clips on the bar - Chaucer, Bridge Street, Gold"
-        />
+        <img :src="bannerImage.src" :alt="bannerImage.alt" />
       </div>
 
       <div ref="parallax" class="text-overlay-box" :style="parallaxStyle">
-        <img
-          class="logo-image"
-          src="/images/green-dragon-bungay-logo-with-dragon-white.png"
-          alt="Green Dragon, Bungay, Suffolk, logo"
-        />
+        <img class="logo-image" :src="logoImage.src" :alt="logoImage.alt" />
       </div>
     </header>
 
@@ -26,34 +29,35 @@
 
   <footer class="footer">
     <div class="main-info">
-      <div class="main-element">01986&nbsp;892681</div>
       <div class="main-element">
-        <a href="mailto:james@greendragonbungay.co.uk"
-          >info@greendragonbungay.co.uk</a
-        >
+        <a class="whitespace-nowrap" :href="`tel:${phoneNumber}`">{{
+          phoneNumber
+        }}</a>
+      </div>
+      <div class="main-element">
+        <a :href="`mailto:${email}`">{{ email }}</a>
       </div>
     </div>
 
     <div class="other-info">
       <section class="footer-section">
         <div class="title">Address</div>
-        <div class="row">29 Broad Street</div>
-        <div class="row">Bungay</div>
-        <div class="row">Suffolk</div>
-        <div class="row">NR35 1EF</div>
+        <div v-for="addressLine in addressLines" :key="addressLine">
+          {{ addressLine }}
+        </div>
       </section>
 
       <section class="footer-section">
         <div class="title">Also</div>
-        <div class="row">
+        <div>
           <a href="https://greendragon.eo.page/1x8dp"
             >Subscribe to our newsletter</a
           >
         </div>
-        <div class="row">
+        <div>
           <a href="https://www.gdbeer.co.uk">Order beer online</a>
         </div>
-        <div class="row">
+        <div>
           <a href="https://www.gdeat.co.uk">Order food online</a>
         </div>
       </section>
@@ -70,28 +74,37 @@
 
       <section class="footer-section">
         <div class="title">Follow us</div>
-        <div class="row">
+        <div>
           <a href="https://www.facebook.com/greendragonbungay/">Facebook</a>
         </div>
-        <div class="row">
+        <div>
           <a href="https://www.instagram.com/greendragonbungay/">Instagram</a>
         </div>
-        <div class="row">
+        <div>
           <a href="https://twitter.com/greendragonbung">Twitter</a>
         </div>
       </section>
     </div>
 
     <div class="copyright">
-      <div>&copy; Green Dragon Bungay 2023</div>
-      <div>Created by <a href="https://www.cloudship.co.uk">Cloudship</a></div>
+      <div>&copy; {{ copyrightBusiness }} {{ new Date().getFullYear() }}</div>
+      <div :html="createdBy" />
     </div>
   </footer>
 </template>
 
 <script>
 export default {
-  props: {},
+  props: {
+    bannerImage: {
+      type: Object,
+      required: true,
+    },
+    logoImage: {
+      type: Object,
+      required: true,
+    },
+  },
   data() {
     return {
       parallaxObserver: null,
@@ -210,7 +223,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 2em;
-    grid-gap: 60px;
+    grid-gap: 45px;
 
     .main-element {
       grid-column: span 2;
@@ -222,14 +235,18 @@ export default {
 
     @media (max-width: 800px) {
       grid-template-columns: 1fr;
-      grid-gap: 20px;
+      grid-gap: 20px 0;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1.5em;
     }
   }
 
   .other-info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 60px;
+    grid-gap: 45px;
 
     @media (max-width: 800px) {
       grid-template-columns: 1fr 1fr;

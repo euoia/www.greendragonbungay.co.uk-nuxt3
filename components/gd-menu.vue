@@ -2,12 +2,12 @@
   <header ref="menuDesktop" class="menu menu-desktop">
     <div class="left menu-section">
       <div v-for="link in menuContent.leftLinks" :key="link.text">
-        <a :href="link.href">{{ link.text }}</a>
+        <NuxtLink :to="link.href">{{ link.text }}</NuxtLink>
       </div>
     </div>
 
     <div ref="menuHeader" class="center menu-section">
-      {{ menuContent.title }}
+      <NuxtLink href="/">{{ menuContent.title }}</NuxtLink>
     </div>
 
     <div class="right menu-section">

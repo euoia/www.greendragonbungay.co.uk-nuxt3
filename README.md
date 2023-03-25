@@ -1,4 +1,17 @@
-# Nuxt 3 Minimal Starter
+# Green Dragon Website
+
+Website for Green Dragon pub and brewery in Bungay, Suffolk, England.
+
+## To do
+
+- [ ] Responsive images.
+- [ ] Use Statamic as the back end.
+
+## Nuxt
+
+This website is built using Nuxt 3.
+
+## Installation
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 

@@ -57,3 +57,8 @@ a {
 :deep(.ampm) {
   font-variant: small-caps;
 }
+
+// Utilities.
+whitespace-nowrap {
+  white-space: nowrap;
+}
