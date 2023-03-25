@@ -1,10 +1,13 @@
 <template>
   <section class="gd-section" :class="variant">
-    <div class="half">
+    <div v-if="images !== null" class="half">
       <gd-images :images="images" />
     </div>
 
-    <div class="half content">
+    <div
+      class="content"
+      :class="{ half: images !== null, full: images === null }"
+    >
       <div class="content-title">
         <h1>{{ title }}</h1>
         <img
@@ -95,6 +98,10 @@ export default {
       min-width: auto;
       flex: auto;
     }
+  }
+
+  .full {
+    max-width: 700px;
   }
 
   .content {

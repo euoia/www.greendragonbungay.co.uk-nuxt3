@@ -83,12 +83,12 @@
       </gd-p>
 
       <gd-p
-        >You can order for takeway at
+        >You can order food for takeway at
         <a href="https://www.gdeat.co.uk">gdeat.co.uk</a>.
       </gd-p>
 
       <template #cta>
-        <div><a href="https://www.gdeat.co.uk">View our food menu</a></div>
+        <div><NuxtLink href="/food">View our food menu</NuxtLink></div>
       </template>
     </gd-section>
 
@@ -123,7 +123,6 @@
     <gd-section
       title="News"
       :images="[{ src: '/images/pump-clips-square.jpg', alt: 'Pump clips' }]"
-      variant="image-right"
     >
       <gd-p icon="fa6-solid:trophy">
         We have won Town Pub of the Year in CAMRA's North East Suffolk pub
