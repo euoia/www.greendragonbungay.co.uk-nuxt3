@@ -7,4 +7,22 @@ export const addressLines = [
   "NR35 1EF",
 ];
 export const copyrightBusiness = "Green Dragon Bungay";
-export const createdBy = `Created by <a href="https://www.cloudship.co.uk">Cloudship</a>`;
+export const createdByLink = {
+  text: `Cloudship`,
+  href: "https://www.cloudship.co.uk",
+};
+
+export const followUsLinks = [
+  {
+    text: "Facebook",
+    href: "https://www.facebook.com/greendragonbungay",
+  },
+  {
+    text: "Instagram",
+    href: "https://www.instagram.com/greendragonbungay",
+  },
+  {
+    text: "Twitter",
+    href: "https://twitter.com/brewgreendragon",
+  },
+];

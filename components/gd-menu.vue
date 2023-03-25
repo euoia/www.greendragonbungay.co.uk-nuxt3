@@ -35,7 +35,7 @@
 
     <div class="hamburger-container">
       <button @click="toggleMenu">
-        <font-awesome-icon :icon="['fas', 'bars']" size="lg" />
+        <Icon name="fa6-solid:bars" size="36px" />
       </button>
     </div>
   </header>

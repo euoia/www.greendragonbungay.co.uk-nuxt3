@@ -1,6 +1,6 @@
 <template>
   <p class="gd-p">
-    <font-awesome-icon v-if="icon" class="icon" :icon="icon" />
+    <Icon v-if="icon" :name="icon" />
     <slot />
   </p>
 </template>
@@ -9,7 +9,7 @@
 export default {
   props: {
     icon: {
-      type: Array,
+      type: String,
       required: false,
       default: null,
     },

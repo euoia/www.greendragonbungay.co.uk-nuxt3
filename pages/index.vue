@@ -125,7 +125,7 @@
       :images="[{ src: '/images/pump-clips-square.jpg', alt: 'Pump clips' }]"
       variant="image-right"
     >
-      <gd-p :icon="['fa', 'trophy']">
+      <gd-p icon="fa6-solid:trophy">
         We have won Town Pub of the Year in CAMRA's North East Suffolk pub
         awards 2023!
       </gd-p>

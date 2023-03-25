@@ -4,7 +4,8 @@ import {
   phoneNumber,
   addressLines,
   copyrightBusiness,
-  createdBy,
+  createdByLink,
+  followUsLinks,
 } from "@/assets/content/business.js";
 </script>
 
@@ -74,21 +75,17 @@ import {
 
       <section class="footer-section">
         <div class="title">Follow us</div>
-        <div>
-          <a href="https://www.facebook.com/greendragonbungay/">Facebook</a>
-        </div>
-        <div>
-          <a href="https://www.instagram.com/greendragonbungay/">Instagram</a>
-        </div>
-        <div>
-          <a href="https://twitter.com/greendragonbung">Twitter</a>
+        <div v-for="followUsLink in followUsLinks" :key="followUsLink">
+          <a :href="followUsLink.href">{{ followUsLink.text }}</a>
         </div>
       </section>
     </div>
 
     <div class="copyright">
       <div>&copy; {{ copyrightBusiness }} {{ new Date().getFullYear() }}</div>
-      <div :html="createdBy" />
+      <div>
+        Created by <a :href="createdByLink.href">{{ createdByLink.text }}</a>
+      </div>
     </div>
   </footer>
 </template>
@@ -135,7 +132,7 @@ export default {
     parallaxCallback() {
       // Parallax and fade the header image.
       const parallax = this.$refs.parallax;
-      if (parallax === undefined) {
+      if (parallax === undefined || parallax === null) {
         return;
       }
 
