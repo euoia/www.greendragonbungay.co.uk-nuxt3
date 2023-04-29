@@ -1,3 +1,4 @@
+<!-- TODO: Support 3-image layouts. -->
 <template>
   <div class="images">
     <!-- When using 1 image, it should be square. -->
@@ -7,20 +8,26 @@
       <img class="image" :src="images[0].src" :alt="images[0].alt" />
     </div>
 
-    <div
-      v-if="images.length === 2 && orientation === 'landscape'"
-      class="images-container"
-    >
+    <div v-if="images.length === 2 && orientation === 'landscape'" class="images-container">
       <img class="image" :src="images[0].src" :alt="images[0].alt" />
       <img class="image" :src="images[1].src" :alt="images[1].alt" />
     </div>
 
-    <div
-      v-if="images.length === 2 && orientation === 'portrait'"
-      class="images-container"
-    >
+    <div v-if="images.length === 2 && orientation === 'portrait'" class="images-container">
       <img class="image" :src="images[0].src" :alt="images[0].alt" />
       <img class="image" :src="images[1].src" :alt="images[1].alt" />
+    </div>
+
+  <!-- TODO: There are potentially 4 variants of 3 images:
+    1. Top image is landscape, bottom images both square.
+    2. Top images are square, bottom image is landscape.
+    3. Left image is portrait, right images are square.
+    4. Left images are square, right image is portrait.
+                        -->
+    <div v-if="images.length === 3 && orientation === 'portrait-left'" class="images-container three-portrait-left">
+      <img class="image" :src="images[0].src" :alt="images[0].alt" />
+      <img class="image" :src="images[1].src" :alt="images[1].alt" />
+      <img class="image" :src="images[2].src" :alt="images[2].alt" />
     </div>
 
     <div v-if="images.length === 4" class="images-container four-images">
@@ -41,9 +48,9 @@ export default {
       default: null,
     },
     orientation: {
-      type: String,
+      ype: String,
       required: false,
-      default: null,
+      default: "portrait",
       validator: (value) => {
         return ["landscape", "portrait"].includes(value);
       },
@@ -54,7 +61,7 @@ export default {
   },
   computed: {},
   watch: {},
-  async created() {},
+  async created() { },
 };
 </script>
 
@@ -76,10 +83,28 @@ export default {
 
   .images-container {
     flex: 1;
+
     .image {
       max-width: 100%;
       max-height: 100%;
       object-fit: cover;
+    }
+
+    &.three-portrait-left {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: var(--gap);
+
+      .image {
+        &:nth-child(1) {
+          grid-column: 1 / 2;
+          grid-row: 1 / 3;
+
+          object-fit: cover;
+          height: 100%;
+        }
+      }
     }
 
     &.four-images {

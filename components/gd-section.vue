@@ -1,20 +1,13 @@
 <template>
-  <section class="gd-section" :class="variant">
+  <section class="gd-section" :class="{ span, half: span === false, [variant]: true }">
     <div v-if="images !== null" class="half">
-      <gd-images :images="images" />
+      <gd-images :images="images" :orientation="imagesOrientation" />
     </div>
 
-    <div
-      class="content"
-      :class="{ half: images !== null, full: images === null }"
-    >
+    <div class="content" :class="{ half: images !== null, full: images === null, span }" v-if="hasContentSlot">
       <div class="content-title">
         <h1>{{ title }}</h1>
-        <img
-          class="separator"
-          src="/images/hops-separator.png"
-          alt="Text separator"
-        />
+        <img class="separator" src="/images/hops-separator.png" alt="Text separator" />
       </div>
 
       <div class="content-body">
@@ -22,7 +15,9 @@
       </div>
 
       <div class="content-footer">
-        <div class="cta"><slot name="cta" /></div>
+        <div class="cta">
+          <slot name="cta" />
+        </div>
       </div>
     </div>
   </section>
@@ -39,6 +34,19 @@ export default {
       type: Array,
       required: false,
       default: null,
+      validator: (images) => {
+        for (const image of images) {
+          if (image.src === undefined) {
+            throw new Error("Image array must contain objects with a src property.");
+          }
+
+          if (image.alt === undefined) {
+            throw new Error("Image array must contain objects with an alt property.");
+          }
+        }
+
+      }
+      // TODO: Validate image array.
     },
     variant: {
       type: String,
@@ -48,13 +56,28 @@ export default {
         return ["image-right"].includes(value);
       },
     },
+    // See gd-images for options.
+    imagesOrientation: {
+      type: String,
+      required: false,
+    },
+    span: {
+      type: Boolean,
+      required: false,
+      default: false,
+    }
   },
   data() {
     return {};
   },
-  computed: {},
+  computed: {
+    hasContentSlot() {
+      return this.$slots && this.$slots.default !== undefined
+    }
+
+  },
   watch: {},
-  async created() {},
+  async created() { },
 };
 </script>
 
@@ -65,6 +88,10 @@ export default {
   position: relative;
   display: flex;
   gap: 6em;
+
+  @media (max-width: $mid-breakpoint) {
+    gap: 3em;
+  }
 
   &.image-right {
     flex-direction: row-reverse;
@@ -87,6 +114,12 @@ export default {
   @media (max-width: $one-col-breakpoint) {
     flex-wrap: wrap;
     padding: 0;
+  }
+
+  .span {
+    width: 100%;
+    min-width: 100%;
+    flex: 1;
   }
 
   .half {
@@ -128,6 +161,7 @@ export default {
       align-items: center;
       text-align: center;
       gap: 2em;
+      line-height: 2.2em;
     }
 
     .content-body {

@@ -51,9 +51,7 @@ import {
       <section class="footer-section">
         <div class="title">Also</div>
         <div>
-          <a href="https://greendragon.eo.page/1x8dp"
-            >Subscribe to our newsletter</a
-          >
+          <gd-newsletter-link />
         </div>
         <div>
           <a href="https://www.gdbeer.co.uk">Order beer online</a>

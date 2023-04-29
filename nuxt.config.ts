@@ -1,11 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // Add app.scss
 export default defineNuxtConfig({
-  css: [
-    "normalize.css/normalize.css",
-    "~/assets/styles/app.scss",
-    "@fortawesome/fontawesome-svg-core/styles.css",
-  ],
+  css: ["normalize.css/normalize.css", "~/assets/styles/app.scss"],
   app: {
     head: {
       link: [
