@@ -1,13 +1,24 @@
 <template>
-  <section class="gd-section" :class="{ span, half: span === false, [variant]: true }">
+  <section
+    class="gd-section"
+    :class="{ span, half: span === false, [variant]: true }"
+  >
     <div v-if="images !== null" class="half">
       <gd-images :images="images" :orientation="imagesOrientation" />
     </div>
 
-    <div class="content" :class="{ half: images !== null, full: images === null, span }" v-if="hasContentSlot">
+    <div
+      class="content"
+      :class="{ half: images !== null, full: images === null, span }"
+      v-if="hasContentSlot"
+    >
       <div class="content-title">
         <h1>{{ title }}</h1>
-        <img class="separator" src="/images/hops-separator.png" alt="Text separator" />
+        <img
+          class="separator"
+          src="/images/hops-separator.png"
+          alt="Text separator"
+        />
       </div>
 
       <div class="content-body">
@@ -37,15 +48,18 @@ export default {
       validator: (images) => {
         for (const image of images) {
           if (image.src === undefined) {
-            throw new Error("Image array must contain objects with a src property.");
+            throw new Error(
+              "Image array must contain objects with a src property."
+            );
           }
 
           if (image.alt === undefined) {
-            throw new Error("Image array must contain objects with an alt property.");
+            throw new Error(
+              "Image array must contain objects with an alt property."
+            );
           }
         }
-
-      }
+      },
       // TODO: Validate image array.
     },
     variant: {
@@ -65,19 +79,18 @@ export default {
       type: Boolean,
       required: false,
       default: false,
-    }
+    },
   },
   data() {
     return {};
   },
   computed: {
     hasContentSlot() {
-      return this.$slots && this.$slots.default !== undefined
-    }
-
+      return this.$slots && this.$slots.default !== undefined;
+    },
   },
   watch: {},
-  async created() { },
+  async created() {},
 };
 </script>
 
@@ -161,7 +174,7 @@ export default {
       align-items: center;
       text-align: center;
       gap: 2em;
-      line-height: 2.2em;
+      line-height: 2.4em;
     }
 
     .content-body {

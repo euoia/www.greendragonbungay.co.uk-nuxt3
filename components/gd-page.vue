@@ -28,7 +28,7 @@ import {
 
   <gd-menu />
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="main-info">
       <div class="main-element">
         <a class="whitespace-nowrap" :href="`tel:${phoneNumber}`">{{
@@ -45,6 +45,12 @@ import {
         <div class="title">Address</div>
         <div v-for="addressLine in addressLines" :key="addressLine">
           {{ addressLine }}
+        </div>
+        <div>
+          <a href="https://goo.gl/maps/kXThU75PBHfe7xJJ9" target="_blank"
+            >Map
+            <Icon name="material-symbols:location-on-outline" />
+          </a>
         </div>
       </section>
 

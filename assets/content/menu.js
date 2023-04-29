@@ -1,3 +1,4 @@
+// TODO: Consider a separate section for the brewery.
 export default {
   title: "GREEN DRAGON",
   leftLinks: [
@@ -9,23 +10,19 @@ export default {
       text: "Food",
       href: "/food",
     },
-    {
-      text: "Brewery",
-      href: "/brewery",
-    },
   ],
   rightLinks: [
     {
       text: "Events",
       href: "/events",
     },
-    {
-      text: "Gallery",
-      href: "/gallery",
-    },
+    //{
+    //  text: "Gallery",
+    //  href: "/gallery",
+    //},
     {
       text: "Contact",
-      href: "/contact",
+      href: "#contact",
     },
   ],
 };

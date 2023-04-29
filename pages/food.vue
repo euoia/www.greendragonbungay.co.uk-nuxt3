@@ -11,17 +11,17 @@
   >
     <gd-section title="Food tells a story">
       <gd-p>
-        Our menu draws on the nostalgia of pub classics whilst incorporating
-        unique elements that mean something to us. Chef&nbsp;Ian&nbsp;Cooke has
-        carefully selected ingredients to create delectable dishes that are
-        distinctive and flavourful.
+        Our menu draws on nostalgic pub favourites whilst incorporating unique
+        elements that mean something to us. Chef&nbsp;Ian&nbsp;Cooke has
+        carefully selected ingredients to create dishes that are distinctive and
+        flavourful.
       </gd-p>
 
       <gd-p>
         One example is Poutine, a Canadian classic that holds a special place in
-        owner James's heart after his time spent in the country. The dish
-        consists of fries, cheese curds, and gravy and is a simple yet
-        incredibly satisfying comfort food.
+        owner James's heart after his time spent in the country. The dish is
+        made from fries, cheese curds, and gravy and is a simple yet incredibly
+        satisfying comfort food.
       </gd-p>
 
       <gd-p>
@@ -45,6 +45,9 @@
       <template #cta>
         <gd-p>
           <a href="/images/current-food-menu.jpg">View our current menu</a>
+        </gd-p>
+        <gd-p>
+          <a href="https://www.gdeat.co.uk">Order online</a>
         </gd-p>
       </template>
     </gd-section>
