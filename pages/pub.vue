@@ -21,7 +21,7 @@
       <gd-p>For several years, Rob had been brewing at his home on Bridge Street
         &horbar; once a pub called the Green Dragon &horbar; when the brothers
         decided to go into business together.</gd-p>
-      <gd-p>Our beer is now brewed by our fantastic head brewery, Luke Pawsey,
+      <gd-p>Our beer is now brewed by our fantastic head brewer, Luke Pawsey,
         using the same recipe Rob devised in the 1980s.</gd-p>
     </gd-section>
 
