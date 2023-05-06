@@ -212,7 +212,6 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 2em;
-
   font-size: max(1.5vw, 16px);
 
   a {
@@ -240,6 +239,7 @@ export default {
 
     @media (max-width: 500px) {
       font-size: 1.5em;
+      grid-gap: 20px 0;
     }
   }
 
@@ -269,6 +269,7 @@ export default {
     .opening-hours {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-gap: 0.5em;
       grid-gap: 1em;
     }
   }

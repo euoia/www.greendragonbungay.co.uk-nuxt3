@@ -172,7 +172,7 @@ export default {
       align-items: center;
       text-align: center;
       gap: 2em;
-      line-height: 2.4em;
+      line-height: 2.6em;
     }
 
     .content-body {
