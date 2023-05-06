@@ -1,27 +1,23 @@
 <template>
-  <gd-page
-    :banner-image="{
-      src: '/images/overhead-shot-of-food-square.jpg',
-      alt: 'Overhead shot of food',
-    }"
-    :logo-image="{
-      src: '/images/deep-fried-brie-funny-dragon-logo.png',
-      alt: 'Deep Fried Brie, Bungay, Suffolk, logo',
-    }"
-  >
+  <gd-page :banner-image="{
+    src: '/images/overhead-shot-of-food-square.jpg',
+    alt: 'Overhead shot of food',
+  }" :logo-image="{
+  src: '/images/deep-fried-brie-funny-dragon-logo.png',
+  alt: 'Deep Fried Brie, Bungay, Suffolk, logo',
+}">
     <gd-section title="Food tells a story">
       <gd-p>
-        Our menu draws on nostalgic pub favourites whilst incorporating unique
-        elements that mean something to us. Chef&nbsp;Ian&nbsp;Cooke has
-        carefully selected ingredients to create dishes that are distinctive and
-        flavourful.
+        Our menu combines comforting favourites with unique elements that each
+        mean something to us. Chef&nbsp;Ian&nbsp;Cooke carefully selects
+        ingredients to create dishes that are distinctive and full of flavour.
       </gd-p>
 
       <gd-p>
-        One example is Poutine, a Canadian classic that holds a special place in
-        owner James's heart after his time spent in the country. The dish is
-        made from fries, cheese curds, and gravy and is a simple yet incredibly
-        satisfying comfort food.
+        <i>One example is Poutine</i> &horbar; a Canadian classic that holds a
+        special place in owner James's heart from his time spent in the country.
+        This amazing dish is made from fries, cheese curds, and gravy and is a
+        simple yet incredibly satisfying comfort food.
       </gd-p>
 
       <gd-p>
@@ -30,8 +26,7 @@
         the menu in a variety of ways.
       </gd-p>
 
-      <gd-p
-        >Our love of chilli led us to ferment Habanero chillies, we we use to
+      <gd-p>Our love of chilli led us to ferment Habanero chillies, we we use to
         make our fiery <i>Fire Dragon</i> sauce. It's a personal favorite of
         ours and we hope it will become one of yours too.
       </gd-p>
@@ -52,23 +47,19 @@
       </template>
     </gd-section>
 
-    <gd-section
-      :images="[
-        {
-          src: 'images/fish-finger-sandwich-crop.jpg',
-          alt: 'A delicious fish finger sandwich',
-        },
-      ]"
-    />
+    <gd-section :images="[
+      {
+        src: 'images/fish-finger-sandwich-crop.jpg',
+        alt: 'A delicious fish finger sandwich',
+      },
+    ]" />
 
-    <gd-section
-      :images="[
-        {
-          src: 'images/ploughmans-scotch-egg.jpg',
-          alt: 'A delicious fish finger sandwich',
-        },
-      ]"
-    />
+    <gd-section :images="[
+      {
+        src: 'images/ploughmans-scotch-egg.jpg',
+        alt: 'A delicious fish finger sandwich',
+      },
+    ]" />
   </gd-page>
 </template>
 
@@ -80,7 +71,7 @@ export default {
   },
   computed: {},
   watch: {},
-  async created() {},
+  async created() { },
 };
 </script>
 
