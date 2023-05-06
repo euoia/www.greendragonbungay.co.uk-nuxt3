@@ -26,7 +26,7 @@
         the menu in a variety of ways.
       </gd-p>
 
-      <gd-p>Our love of chilli led us to ferment Habanero chillies, we we use to
+      <gd-p>Our love of chillies led us to ferment Habanero peppers, which we use to
         make our fiery <i>Fire Dragon</i> sauce. It's a personal favorite of
         ours and we hope it will become one of yours too.
       </gd-p>
