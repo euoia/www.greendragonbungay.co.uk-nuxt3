@@ -31,11 +31,23 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/variables.scss";
+
 .gd-quote {
   font-size: 2em;
   line-height: 1.3em;
   padding-left: 4em;
   padding-right: 4em;
+
+  @media (max-width: $mid-breakpoint) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  @media (max-width: $one-col-breakpoint) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 
   .quote {
     font-size: 2em;
