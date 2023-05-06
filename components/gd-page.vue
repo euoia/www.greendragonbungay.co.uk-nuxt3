@@ -269,6 +269,7 @@ export default {
     .opening-hours {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
     }
   }
 
