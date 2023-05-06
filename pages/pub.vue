@@ -40,7 +40,7 @@
         undergoes secondary fermentation for a minimum of seven days, after
         which time it can be prepared for serving.</gd-p>
       <gd-p>If you would like to arrange a brewery tour, please
-        <a href="info@greendragonbungay.co.uk">get in touch</a>.</gd-p>
+        <a href="mailto:info@greendragonbungay.co.uk">get in touch</a>.</gd-p>
     </gd-section>
   </gd-page>
 </template>
