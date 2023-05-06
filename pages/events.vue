@@ -79,7 +79,8 @@ import events from "~/assets/content/events.js";
 </template>
 
 <script>
-import { chain } from "lodash";
+import lodash from "lodash";
+const { chain } = lodash;
 
 export default {
   props: {},
