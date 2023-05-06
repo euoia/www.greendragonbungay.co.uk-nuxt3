@@ -1,8 +1,8 @@
 <template>
-  <p class="gd-p">
+  <div class="gd-p">
     <Icon v-if="icon" :name="icon" />
     <slot />
-  </p>
+  </div>
 </template>
 
 <script>
@@ -19,13 +19,14 @@ export default {
   },
   computed: {},
   watch: {},
-  async created() {},
+  async created() { },
 };
 </script>
 
 <style lang="scss" scoped>
 .gd-p {
   margin: 0;
+  font-size: var(--body-font-size);
 
   .icon {
     margin-right: 5px;

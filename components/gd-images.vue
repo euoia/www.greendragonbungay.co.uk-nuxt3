@@ -23,7 +23,7 @@
     2. Top images are square, bottom image is landscape.
     3. Left image is portrait, right images are square.
     4. Left images are square, right image is portrait.
-                        -->
+                            -->
     <div v-if="images.length === 3 && orientation === 'portrait-left'" class="images-container three-portrait-left">
       <img class="image" :src="images[0].src" :alt="images[0].alt" />
       <img class="image" :src="images[1].src" :alt="images[1].alt" />
@@ -52,7 +52,7 @@ export default {
       required: false,
       default: "portrait",
       validator: (value) => {
-        return ["landscape", "portrait"].includes(value);
+        return ["landscape", "portrait", "portrait-left"].includes(value);
       },
     },
   },
@@ -78,7 +78,7 @@ export default {
     width: 100%;
     min-width: auto;
     flex: auto;
-    min-height: 400px;
+    min-height: inherit;
   }
 
   .images-container {

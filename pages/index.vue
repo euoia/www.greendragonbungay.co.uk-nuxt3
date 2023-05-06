@@ -1,3 +1,7 @@
+<script setup>
+import quotes from "~/assets/content/quotes.js";
+</script>
+
 <template>
   <gd-page
     :banner-image="{
@@ -9,6 +13,10 @@
       alt: 'Green Dragon, Bungay, Suffolk, logo',
     }"
   >
+    <gd-section span>
+      <gd-quote v-bind="randomQuote" />
+    </gd-section>
+
     <gd-section
       title="About"
       :images="[
@@ -74,8 +82,8 @@
     >
       <gd-p
         >Chef Ian Cooke created an eclectic menu using exclusive elements such
-        as artisan Portugeuse bifana bread and featuring international
-        favourites such as Canadian Poutine.
+        as artisan Portugeuse bread and featuring international favourites like
+        Canadian Poutine.
       </gd-p>
 
       <gd-p
@@ -118,7 +126,9 @@
       >
 
       <template #cta>
-        <gd-p><a href="/upcoming-events">See our upcoming events</a></gd-p>
+        <gd-p>
+          <NuxtLink href="/events">See our upcoming events</NuxtLink>
+        </gd-p>
       </template>
     </gd-section>
 
@@ -127,8 +137,8 @@
       :images="[{ src: '/images/pump-clips-square.jpg', alt: 'Pump clips' }]"
     >
       <gd-p icon="fa6-solid:trophy">
-        We have won Town Pub of the Year in CAMRA's North East Suffolk pub
-        awards 2023!
+        We won Town Pub of the Year in CAMRA's North East Suffolk pub awards
+        2023!
       </gd-p>
 
       <gd-p>
@@ -150,10 +160,10 @@
     >
       <gd-p
         >During the summer, we sometimes invite food trucks to park up outside
-        the pub. Join our mailing list to stay up to date!</gd-p
-      >
-    </gd-section>
-    -->
+            the pub. Join our mailing list to stay up to date!</gd-p
+          >
+        </gd-section>
+        -->
   </gd-page>
 </template>
 
@@ -163,7 +173,11 @@ export default {
   data() {
     return {};
   },
-  computed: {},
+  computed: {
+    randomQuote() {
+      return quotes[Math.floor(Math.random() * quotes.length)];
+    },
+  },
   watch: {},
   async created() {},
 };

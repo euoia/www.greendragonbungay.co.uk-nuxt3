@@ -20,11 +20,14 @@
   <header ref="menuMobile" class="menu menu-mobile">
     <div class="full-screen-menu" :class="{ showing: showingMenu }">
       <div class="menu-section">
+        <div>
+          <NuxtLink href="/">{{ menuContent.title }}</NuxtLink>
+        </div>
         <div v-for="link in menuContent.leftLinks" :key="link.text">
-          <a :href="link.href">{{ link.text }}</a>
+          <NuxtLink :href="link.href">{{ link.text }}</NuxtLink>
         </div>
         <div v-for="link in menuContent.rightLinks" :key="link.text">
-          <a :href="link.href">{{ link.text }}</a>
+          <NuxtLink :href="link.href">{{ link.text }}</NuxtLink>
         </div>
       </div>
     </div>

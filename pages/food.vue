@@ -52,7 +52,23 @@
       </template>
     </gd-section>
 
-    <!-- TODO: gd-image-section -->
+    <gd-section
+      :images="[
+        {
+          src: 'images/fish-finger-sandwich-crop.jpg',
+          alt: 'A delicious fish finger sandwich',
+        },
+      ]"
+    />
+
+    <gd-section
+      :images="[
+        {
+          src: 'images/ploughmans-scotch-egg.jpg',
+          alt: 'A delicious fish finger sandwich',
+        },
+      ]"
+    />
   </gd-page>
 </template>
 

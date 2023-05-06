@@ -1,31 +1,20 @@
 <template>
-  <section
-    class="gd-section"
-    :class="{ span, half: span === false, [variant]: true }"
-  >
+  <section class="gd-section" :class="{ span, half: span === false, [variant]: variant !== null }">
     <div v-if="images !== null" class="half">
       <gd-images :images="images" :orientation="imagesOrientation" />
     </div>
 
-    <div
-      class="content"
-      :class="{ half: images !== null, full: images === null, span }"
-      v-if="hasContentSlot"
-    >
-      <div class="content-title">
+    <div class="content" :class="{ half: images !== null, full: images === null, span }" v-if="hasContentSlot">
+      <div class="content-title" v-if="title">
         <h1>{{ title }}</h1>
-        <img
-          class="separator"
-          src="/images/hops-separator.png"
-          alt="Text separator"
-        />
+        <img class="separator" src="/images/hops-separator.png" alt="Text separator" />
       </div>
 
       <div class="content-body">
         <slot />
       </div>
 
-      <div class="content-footer">
+      <div class="content-footer" v-if="hasCta">
         <div class="cta">
           <slot name="cta" />
         </div>
@@ -39,7 +28,7 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+      required: false,
     },
     images: {
       type: Array,
@@ -48,17 +37,21 @@ export default {
       validator: (images) => {
         for (const image of images) {
           if (image.src === undefined) {
-            throw new Error(
+            console.warn(
               "Image array must contain objects with a src property."
             );
+            return false;
           }
 
           if (image.alt === undefined) {
-            throw new Error(
-              "Image array must contain objects with an alt property."
+            console.warn(
+              "Image array must contain objects with a alt property."
             );
+            return false;
           }
         }
+
+        return true;
       },
       // TODO: Validate image array.
     },
@@ -88,9 +81,12 @@ export default {
     hasContentSlot() {
       return this.$slots && this.$slots.default !== undefined;
     },
+    hasCta() {
+      return this.$slots && this.$slots.cta !== undefined;
+    },
   },
   watch: {},
-  async created() {},
+  async created() { },
 };
 </script>
 
@@ -100,6 +96,7 @@ export default {
 .gd-section {
   position: relative;
   display: flex;
+  justify-content: center;
   gap: 6em;
 
   @media (max-width: $mid-breakpoint) {

@@ -8,7 +8,7 @@ body {
   --light-header-color: #a3a2a3;
   --body-font: "profile-pro", sans-serif;
   --body-font-size: 22px;
-  --body-color: #444449;
+  --body-color: black;
   --body-background-color: #ffffff;
 
   --max-page-width: 1400px;
@@ -17,7 +17,7 @@ body {
   //background: url("~/assets/images/background.png");
   //background-size: 3200px 3200px;
 
-  color: black;
+  color: var(--body-color);
 
   font-family: var(--body-font);
   font-weight: 400;
