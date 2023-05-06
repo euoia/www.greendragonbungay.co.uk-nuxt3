@@ -73,6 +73,10 @@ import {
           <div>12&nbsp;&horbar;&nbsp;12</div>
           <div>Sun</div>
           <div>12&nbsp;&horbar;&nbsp;10</div>
+          <div><b>Kitchen</b></div>
+          <div></div>
+          <div>Thu &horbar; Sat</div>
+          <div>12&nbsp;&horbar;&nbsp;8</div>
         </div>
       </section>
 
@@ -270,7 +274,6 @@ export default {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 0.5em;
-      grid-gap: 1em;
     }
   }
 

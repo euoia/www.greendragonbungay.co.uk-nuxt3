@@ -15,20 +15,20 @@
 
       <gd-p>
         <i>One example is Poutine</i> &horbar; a Canadian classic that holds a
-        special place in owner James's heart from his time spent in the country.
-        This amazing dish is made from fries, cheese curds, and gravy and is a
-        simple yet incredibly satisfying comfort food.
+        special place in owner James Pickard's belly from his years working as a
+        programmer in Montreal. This amazing dish is made from fries, cheese
+        curds, and gravy and is simple yet satisfying food.
       </gd-p>
 
       <gd-p>
         Owner Rob has spent years perfecting his technique of smoking cheddar
-        cheese. Now, we proudly feature our very own smoked ham and cheese on
-        the menu in a variety of ways.
+        cheese. Now, we proudly feature our own smoked ham and cheese on the
+        menu in a variety of ways.
       </gd-p>
 
-      <gd-p>Our love of chillies led us to ferment Habanero peppers, which we use to
-        make our fiery <i>Fire Dragon</i> sauce. It's a personal favorite of
-        ours and we hope it will become one of yours too.
+      <gd-p>Our love of chillies led us to ferment Habanero peppers, which we use
+        to make our seriously spicy <i>Fire Dragon</i> sauce. It's a personal
+        favorite of ours and we hope it can become one of yours too.
       </gd-p>
 
       <gd-p>
