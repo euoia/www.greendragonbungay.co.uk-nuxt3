@@ -23,10 +23,11 @@
         <div>
           <NuxtLink href="/">{{ menuContent.title }}</NuxtLink>
         </div>
-        <div v-for="link in menuContent.leftLinks" :key="link.text">
-          <NuxtLink :href="link.href">{{ link.text }}</NuxtLink>
-        </div>
-        <div v-for="link in menuContent.rightLinks" :key="link.text">
+        <div
+          v-for="link in [...menuContent.leftLinks, ...menuContent.rightLinks]"
+          :key="link.text"
+          @click="handleClick"
+        >
           <NuxtLink :href="link.href">{{ link.text }}</NuxtLink>
         </div>
       </div>
@@ -130,6 +131,10 @@ export default {
     parallaxCallback() {
       this.parallaxMenu(this.$refs.menuDesktop);
       this.parallaxMenu(this.$refs.menuMobile);
+    },
+    handleClick() {
+      console.log(`handleClick`);
+      this.toggleMenu();
     },
   },
 };
