@@ -13,11 +13,11 @@ import {
   <div class="gd-page">
     <header class="hero-header">
       <div class="hero-image">
-        <img :src="bannerImage.src" :alt="bannerImage.alt" />
+        <nuxt-img :src="bannerImage.src" :alt="bannerImage.alt" />
       </div>
 
       <div ref="parallax" class="text-overlay-box" :style="parallaxStyle">
-        <img class="logo-image" :src="logoImage.src" :alt="logoImage.alt" />
+        <nuxt-img class="logo-image" :src="logoImage.src" :alt="logoImage.alt" />
       </div>
     </header>
 
@@ -47,8 +47,7 @@ import {
           {{ addressLine }}
         </div>
         <div>
-          <a href="https://goo.gl/maps/kXThU75PBHfe7xJJ9" target="_blank"
-            >Map
+          <a href="https://goo.gl/maps/kXThU75PBHfe7xJJ9" target="_blank">Map
             <Icon name="material-symbols:location-on-outline" />
           </a>
         </div>

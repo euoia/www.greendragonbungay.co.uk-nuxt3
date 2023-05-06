@@ -7,6 +7,7 @@
     <div class="content" :class="{ half: images !== null, full: images === null, span }" v-if="hasContentSlot">
       <div class="content-title" v-if="title">
         <h1>{{ title }}</h1>
+        <!-- Not nuxt-img on purpose here. -->
         <img class="separator" src="/images/hops-separator.png" alt="Text separator" />
       </div>
 
