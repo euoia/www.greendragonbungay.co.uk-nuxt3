@@ -1,21 +1,38 @@
 <template>
-  <section class="gd-section" :class="{ span, half: span === false, [variant]: variant !== null }">
+  <section
+    class="gd-section"
+    :class="{ span, half: span === false, [variant]: variant !== null }"
+  >
     <div v-if="images !== null" class="half">
       <gd-images :images="images" :orientation="imagesOrientation" />
     </div>
 
-    <div class="content" :class="{ half: images !== null, full: images === null, span }" v-if="hasContentSlot">
+    <div
+      class="content"
+      :class="{ half: images !== null, full: images === null, span }"
+      v-if="hasContentSlot"
+    >
       <div class="content-title" v-if="title">
         <h1>{{ title }}</h1>
         <!-- Not nuxt-img on purpose here. -->
-        <img class="separator" src="/images/hops-separator.png" alt="Text separator" />
+        <img
+          class="separator"
+          src="/images/hops-separator.png"
+          alt="Text separator"
+        />
+      </div>
+
+      <div class="cta-top" v-if="hasCta && ctaPosition === 'top'">
+        <div class="cta">
+          <slot name="cta" />
+        </div>
       </div>
 
       <div class="content-body">
         <slot />
       </div>
 
-      <div class="content-footer" v-if="hasCta">
+      <div class="content-footer" v-if="hasCta && ctaPosition === 'bottom'">
         <div class="cta">
           <slot name="cta" />
         </div>
@@ -56,6 +73,14 @@ export default {
       },
       // TODO: Validate image array.
     },
+    ctaPosition: {
+      type: String,
+      required: false,
+      default: "bottom",
+      validator: (value) => {
+        return ["bottom", "top"].includes(value);
+      },
+    },
     variant: {
       type: String,
       required: false,
@@ -87,7 +112,7 @@ export default {
     },
   },
   watch: {},
-  async created() { },
+  async created() {},
 };
 </script>
 
