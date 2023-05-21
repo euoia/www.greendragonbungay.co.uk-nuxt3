@@ -32,8 +32,11 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["nuxt-icon", "@nuxt/image-edge"],
+  modules: ["nuxt-icon", "@nuxt/image-edge", "nuxt-gtag"],
   image: {
     // Options
+  },
+  gtag: {
+    id: "G-DM6HD19GYT",
   },
 });

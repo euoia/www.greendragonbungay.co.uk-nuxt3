@@ -6,8 +6,18 @@ const events = [
     href: "https://www.hotstove3.com/",
   },
   {
+    starts_at: "2023-07-16T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
+  },
+  {
     starts_at: "2023-07-09T14:30:00",
     text: "Generation Gap",
+  },
+  {
+    starts_at: "2023-07-09T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
   },
   {
     starts_at: "2023-06-25:30:00",
@@ -20,8 +30,18 @@ const events = [
     href: "https://www.facebook.com/people/The-Blue-Plate-Specials/100063836958831/",
   },
   {
+    starts_at: "2023-06-18T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
+  },
+  {
     starts_at: "2023-06-04T14:30:00",
     text: "The Cruisers",
+  },
+  {
+    starts_at: "2023-06-04T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
   },
   {
     starts_at: "2023-05-14T14:30:00",

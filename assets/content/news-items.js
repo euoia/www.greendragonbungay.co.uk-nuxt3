@@ -14,7 +14,7 @@ const newsItems = [
     title:
       "With help from East Suffolk Council's Plan for the Future Grant Scheme we have an amazing new cold store for our beer.",
     paragraphs: [
-      '<a href="https://www.greendragonbungay.co.uk/blog/2022-01-24-a-new-beer-store.html">You can read more about it here</a>',
+      '<a href="https://www.greendragonbungay.co.uk/old-site/blog/2022-01-24-a-new-beer-store.html">You can read more about it here</a>',
     ],
   },
 ];

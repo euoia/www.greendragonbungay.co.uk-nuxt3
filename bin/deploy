@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+rsync --archive --verbose .output/public/ www.greendragonbungay.co.uk:/var/www/james/greendragonbungay.co.uk/wwwroot/
