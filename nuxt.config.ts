@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   css: ["normalize.css/normalize.css", "~/assets/styles/app.scss"],
   app: {
     head: {
-      title: "Green Dragon Bungay",
+      title: "Green Dragon Bungay | Pub & Brewery | Suffolk",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -12,7 +12,7 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "The Green Dragon in Bungay, Suffolk – a highly-rated pub & brewery, praised for its friendly staff, exceptional craft beers, and delicious food. Open Thu-Sat, 12-8pm.",
+            "Green Dragon, Bungay, Suffolk – highly-rated pub & brewery, praised for friendly staff, exceptional beers and brilliant food.",
         },
       ],
       link: [
