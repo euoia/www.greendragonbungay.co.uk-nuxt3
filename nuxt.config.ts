@@ -12,7 +12,7 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "Green Dragon, Bungay, Suffolk – highly-rated pub & brewery, praised for friendly staff, exceptional beers and brilliant food.",
+            "Green Dragon, Bungay, Suffolk – highly rated pub & brewery, praised for friendly staff, exceptional beers and brilliant food.",
         },
       ],
       link: [
