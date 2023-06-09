@@ -1,5 +1,6 @@
 // Order is not important, grouped on front end.
 const events = [
+  // 16 July 2023.
   {
     starts_at: "2023-07-16T15:00:00",
     text: "Hot Stove 3",
@@ -10,6 +11,8 @@ const events = [
     text: "Woktruck &horbar; Asian Street Food",
     href: "https://www.facebook.com/profile.php?id=100089983001484",
   },
+
+  // 9 July 2023.
   {
     starts_at: "2023-07-09T14:30:00",
     text: "Generation Gap",
@@ -19,11 +22,32 @@ const events = [
     text: "Woktruck &horbar; Asian Street Food",
     href: "https://www.facebook.com/profile.php?id=100089983001484",
   },
+
+  // 2 July 2023.
   {
-    starts_at: "2023-06-25:30:00",
+    starts_at: "2023-07-02T14:30:00",
+    text: "The Likes of Us",
+    href: "https://www.facebook.com/profile.php?id=100039241282655",
+  },
+  {
+    starts_at: "2023-07-02T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
+  },
+
+  // 25 June 2023.
+  {
+    starts_at: "2023-06-25T14:30:00",
     text: "Murphy's Lore",
     href: "https://www.murphyslore.co.uk/",
   },
+  {
+    starts_at: "2023-06-25T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
+  },
+
+  // 18 June 2023.
   {
     starts_at: "2023-06-18T15:00:00",
     text: "Blue Plate Specials",
@@ -34,6 +58,8 @@ const events = [
     text: "Woktruck &horbar; Asian Street Food",
     href: "https://www.facebook.com/profile.php?id=100089983001484",
   },
+
+  // 4 June 2023.
   {
     starts_at: "2023-06-04T14:30:00",
     text: "The Cruisers",
@@ -43,6 +69,8 @@ const events = [
     text: "Woktruck &horbar; Asian Street Food",
     href: "https://www.facebook.com/profile.php?id=100089983001484",
   },
+
+  // 14 May 2023.
   {
     starts_at: "2023-05-14T14:30:00",
     text: "High Symes & Miss Demeanor",
@@ -53,15 +81,21 @@ const events = [
     text: "Woktruck &horbar; Asian Street Food",
     href: "https://www.facebook.com/profile.php?id=100089983001484",
   },
+
+  // 29 April 2023.
+  {
+    starts_at: "2023-04-29T14:30:00",
+    text: "T'wyx",
+  },
+
+  // 16 April 2023.
   {
     starts_at: "2023-04-16T14:30:00",
     text: "Murphy's Lore",
     href: "https://www.murphyslore.co.uk/",
   },
-  {
-    starts_at: "2023-04-29T14:30:00",
-    text: "T'wyx",
-  },
+
+  // 30 April 2023.
   {
     starts_at: "2023-04-30T14:30:00",
     text: "The Likes of Us",
