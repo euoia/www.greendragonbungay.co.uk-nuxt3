@@ -16,7 +16,6 @@
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
-    "lodash": "^4.17.21",
     "normalize.css": "^8.0.1",
     "nuxt": "^3.4.3",
     "nuxt-gtag": "^0.5.7",
@@ -26,6 +25,7 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "consola": "^3.0.1"
+    "consola": "^3.0.1",
+    "lodash": "^4.17.21"
   }
 }
