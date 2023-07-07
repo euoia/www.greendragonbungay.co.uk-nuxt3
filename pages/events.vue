@@ -111,10 +111,10 @@ import events from "~/assets/content/events.js";
         >.</gd-p
       >
       <gd-p
-        >A "Litle Beer Festival" &horbar; sample a selection of our favourite
+        >Our "Litle Beer Festival" &horbar; sample a selection of our favourite
         real ales on cask.</gd-p
       >
-      <gd-p>Charity quiz nights.</gd-p>
+      <gd-p>We occasionally host charity quiz nights.</gd-p>
     </gd-section>
   </gd-page>
 </template>
