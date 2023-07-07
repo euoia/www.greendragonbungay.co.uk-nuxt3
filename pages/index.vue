@@ -180,7 +180,7 @@ export default {
   computed: {},
   watch: {},
   async created() {
-    return sample(quotes);
+    this.randomQuote = sample(quotes);
   },
 };
 </script>
