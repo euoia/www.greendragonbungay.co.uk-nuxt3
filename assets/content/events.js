@@ -1,5 +1,35 @@
 // Order is not important, grouped on front end.
 const events = [
+  // 13 August 2023.
+  {
+    starts_at: "2023-08-13T13:00:00",
+    text: "Oyster Bar by Earsham Street Fish Co.",
+    href: "https://www.facebook.com/EarshamStreetFishCo",
+  },
+
+  // 6 August 2023.
+  {
+    starts_at: "2023-08-06T14:30:00",
+    text: "Steve & Greta",
+    href: "https://www.youtube.com/watch?v=vpJMR6hanh4",
+  },
+  {
+    starts_at: "2023-08-06T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
+  },
+
+  // 23 July 2023.
+  {
+    starts_at: "2023-07-23T14:30:00",
+    text: "Andy & Friends",
+  },
+  {
+    starts_at: "2023-07-23T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
+  },
+
   // 16 July 2023.
   {
     starts_at: "2023-07-16T15:00:00",
