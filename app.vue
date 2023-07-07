@@ -11,6 +11,8 @@ useSchemaOrg([
       "https://www.twitter.com/brewgreendragon",
       "https://www.facebook.com/greendragonbungay",
       "https://www.instagram.com/greendragon91",
+      "https://www.gdeat.co.uk",
+      "https://www.gdbeer.co.uk",
     ],
     address: {
       streetAddress: "29 Broad Street",
