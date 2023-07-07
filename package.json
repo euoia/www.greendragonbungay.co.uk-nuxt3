@@ -20,6 +20,7 @@
     "nuxt": "^3.4.3",
     "nuxt-gtag": "^0.5.7",
     "nuxt-icon": "^0.3.3",
+    "nuxt-schema-org": "^2.2.0",
     "prettier": "^2.8.4",
     "sass": "^1.59.3",
     "typescript": "^5.0.2"

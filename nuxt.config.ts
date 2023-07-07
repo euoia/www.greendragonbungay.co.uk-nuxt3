@@ -32,11 +32,16 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["nuxt-icon", "@nuxt/image-edge", "nuxt-gtag"],
+  modules: ["nuxt-icon", "@nuxt/image-edge", "nuxt-gtag", "nuxt-schema-org"],
   image: {
     // Options
   },
   gtag: {
     id: "G-DM6HD19GYT",
+  },
+  schemaOrg: {
+    host: "https://www.greendragonbungay.co.uk",
+    inLanguage: "en-GB",
+    currency: "GBP",
   },
 });
