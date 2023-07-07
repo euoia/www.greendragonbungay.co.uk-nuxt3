@@ -42,6 +42,10 @@
         A cask-conditioned session IPA &horbar; bitter and aromatic with a
         lasting finish.</gd-p
       >
+      <gd-p>
+        We have a website where you can select and order beer for takeaway.<br />
+        <a href="https://www.gdbeer.co.uk">Order beer online</a>
+      </gd-p>
     </gd-section>
 
     <gd-section
