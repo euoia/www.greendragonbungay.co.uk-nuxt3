@@ -9,6 +9,7 @@ const events = [
   {
     starts_at: "2023-08-13T14:00:00",
     text: "Blue Sky Music",
+    href: "https://blueskymusic.co.uk/"
   },
 
   // 6 August 2023.
