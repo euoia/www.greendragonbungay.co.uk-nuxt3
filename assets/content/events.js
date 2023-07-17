@@ -6,6 +6,10 @@ const events = [
     text: "Oyster Bar by Earsham Street Fish Co.",
     href: "https://www.facebook.com/EarshamStreetFishCo",
   },
+  {
+    starts_at: "2023-08-13T14:00:00",
+    text: "Blue Sky Music",
+  },
 
   // 6 August 2023.
   {
