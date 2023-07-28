@@ -1,11 +1,14 @@
 <template>
-  <gd-page :banner-image="{
-    src: '/images/overhead-shot-of-food-square.jpg',
-    alt: 'Overhead shot of food',
-  }" :logo-image="{
-  src: '/images/deep-fried-brie-funny-dragon-logo.png',
-  alt: 'Deep Fried Brie, Bungay, Suffolk, logo',
-}">
+  <gd-page
+    :banner-image="{
+      src: '/images/overhead-shot-of-food-square.jpg',
+      alt: 'Overhead shot of food',
+    }"
+    :logo-image="{
+      src: '/images/deep-fried-brie-funny-dragon-logo.png',
+      alt: 'Deep Fried Brie, Bungay, Suffolk, logo',
+    }"
+  >
     <gd-section title="Food tells a story" cta-position="top">
       <gd-p>
         Our menu combines comforting favourites with unique elements that each
@@ -26,7 +29,8 @@
         menu in a variety of ways.
       </gd-p>
 
-      <gd-p>Our love of chillies led us to ferment Habanero peppers, which we use
+      <gd-p
+        >Our love of chillies led us to ferment Habanero peppers, which we use
         to make our seriously spicy <i>Fire Dragon</i> sauce. It's a personal
         favorite of ours and we hope it can become one of yours too.
       </gd-p>
@@ -39,7 +43,9 @@
 
       <template #cta>
         <gd-p>
-          <a href="/images/green-dragon-bungay-food-menu-thursday-to-saturday.jpg">View our current menu</a>
+          <a href="/images/2023-06-06-green-dragon-summer-food-menu.jpg"
+            >View our current menu</a
+          >
         </gd-p>
         <gd-p>
           <a href="https://www.gdeat.co.uk">Order online</a>
@@ -47,26 +53,32 @@
       </template>
     </gd-section>
 
-    <gd-section :images="[
-      {
-        src: 'images/fish-finger-sandwich-crop.jpg',
-        alt: 'A delicious fish finger sandwich',
-      },
-    ]" />
+    <gd-section
+      :images="[
+        {
+          src: 'images/fish-finger-sandwich-crop.jpg',
+          alt: 'A delicious fish finger sandwich',
+        },
+      ]"
+    />
 
-    <gd-section :images="[
-      {
-        src: 'images/ploughmans-scotch-egg.jpg',
-        alt: 'A delicious fish finger sandwich',
-      },
-    ]" />
+    <gd-section
+      :images="[
+        {
+          src: 'images/ploughmans-scotch-egg.jpg',
+          alt: 'A delicious fish finger sandwich',
+        },
+      ]"
+    />
 
-    <gd-section :images="[
-      {
-        src: 'images/crispy-chilli-beer-and-hammerton-tuned-pale-ale.jpg',
-        alt: 'Crispy chilli beef, made with fillet steak, served with a can of Hammerton Tuned Pale Ale',
-      },
-    ]" />
+    <gd-section
+      :images="[
+        {
+          src: 'images/crispy-chilli-beer-and-hammerton-tuned-pale-ale.jpg',
+          alt: 'Crispy chilli beef, made with fillet steak, served with a can of Hammerton Tuned Pale Ale',
+        },
+      ]"
+    />
   </gd-page>
 </template>
 
@@ -78,7 +90,7 @@ export default {
   },
   computed: {},
   watch: {},
-  async created() { },
+  async created() {},
 };
 </script>
 
