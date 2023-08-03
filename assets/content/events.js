@@ -1,5 +1,42 @@
 // Order is not important, grouped on front end.
 const events = [
+  // 17 September 2023.
+  // Probably last Sunday Wok Truck this year.
+  {
+    starts_at: "2023-09-17T14:30:00",
+    text: "Murphy's Lore",
+    href: "https://www.murphyslore.co.uk/",
+  },
+  {
+    starts_at: "2023-09-17T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
+  },
+
+  // 3 September 2023.
+  {
+    starts_at: "2023-09-03T14:30:00",
+    text: "Dragon Dubs Party",
+  },
+  {
+    starts_at: "2023-09-03T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
+  },
+
+  // 27 August 2023.
+  {
+    starts_at: "2023-08-27T14:30:00",
+    text: "GB Unchained",
+  },
+  {
+    starts_at: "2023-08-27T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
+  },
+
+  // 20 August 2023 - nothing yet.
+
   // 13 August 2023.
   {
     starts_at: "2023-08-13T13:00:00",
@@ -9,7 +46,7 @@ const events = [
   {
     starts_at: "2023-08-13T14:00:00",
     text: "Blue Sky Music",
-    href: "https://blueskymusic.co.uk/"
+    href: "https://blueskymusic.co.uk/",
   },
 
   // 6 August 2023.
