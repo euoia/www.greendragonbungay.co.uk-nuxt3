@@ -3,7 +3,8 @@
     <div>
       <span class="time">{{ computedTime }}</span>
       &nbsp;
-      <component :is="href === null ? 'span' : 'a'" :href="href"><span v-html="text" />
+      <component :is="href === null ? 'span' : 'a'" :href="href"
+        ><span v-html="text" />
       </component>
     </div>
   </gd-p>
@@ -22,6 +23,7 @@ export default {
       return startsAt.toLocaleTimeString("en-US", {
         hour: "numeric",
         minute: "numeric",
+        timeZone: "Europe/London",
       });
     },
   },

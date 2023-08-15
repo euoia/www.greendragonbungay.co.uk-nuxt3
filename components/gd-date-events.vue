@@ -3,7 +3,11 @@
     <div>
       <b>{{ computedDate }}</b>
     </div>
-    <gd-event v-for="event in events" v-bind="event" :key="`${event.starts_at} ${event.text}`" />
+    <gd-event
+      v-for="event in events"
+      v-bind="event"
+      :key="`${event.starts_at} ${event.text}`"
+    />
   </gd-p>
 </template>
 
@@ -21,6 +25,8 @@ export default {
         day: "numeric",
         month: "long",
         year: "numeric",
+        // We use UTC because only the date portion of the event is provided.
+        timeZone: "UTC",
       });
     },
   },
