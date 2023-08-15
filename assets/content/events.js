@@ -20,8 +20,7 @@ const events = [
   },
   {
     starts_at: "2023-09-03T12:00:00",
-    text: "Woktruck &horbar; Asian Street Food",
-    href: "https://www.facebook.com/profile.php?id=100089983001484",
+    text: "Caribbean Street Food",
   },
 
   // 27 August 2023.
@@ -36,6 +35,16 @@ const events = [
   },
 
   // 20 August 2023 - nothing yet.
+  {
+    starts_at: "2023-08-20T14:30:00",
+    text: "The High Points",
+    href: "https://www.highpointsband.com/about",
+  },
+  {
+    starts_at: "2023-08-20T12:00:00",
+    text: "Woktruck &horbar; Asian Street Food",
+    href: "https://www.facebook.com/profile.php?id=100089983001484",
+  },
 
   // 13 August 2023.
   {
