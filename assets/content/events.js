@@ -1,7 +1,49 @@
 // Note that times are UTC, so please accommodate BST.
+// TODO: Would be easier if times are Europe/London.
 //
 // Order is not important, grouped on front end.
 const events = [
+  // 5 November 2023.
+  {
+    starts_at: "2023-11-05T14:30:00Z",
+    text: "Blue Plate Specials",
+    href: "https://www.facebook.com/people/The-Blue-Plate-Specials/100063836958831/",
+  },
+  // 29 October 2023.
+  {
+    starts_at: "2023-10-29T14:30:00Z",
+    text: "The Likes of Us",
+    href: "https://www.facebook.com/profile.php?id=100039241282655",
+  },
+  // 22 October 2023.
+  {
+    starts_at: "2023-10-22T13:30:00Z",
+    text: "High Symes & Miss Demeanor",
+    href: "https://www.youtube.com/watch?v=zm0yNIf_k5k",
+  },
+  // 15 October 2023.
+  {
+    starts_at: "2023-10-15T13:30:00Z",
+    text: "The Cruisers",
+    href: "https://www.facebook.com/thecruisersrock",
+  },
+  // 8 October 2023.
+  {
+    starts_at: "2023-10-08T13:30:00Z",
+    text: "JC's Moonshine Band",
+    href: "https://www.facebook.com/jcsmoonshineband",
+  },
+  // 1 October 2023.
+  {
+    starts_at: "2023-10-01T13:30:00Z",
+    text: "Treacle Miners",
+  },
+  // 24 September 2023.
+  {
+    starts_at: "2023-09-24T13:30:00Z",
+    text: "Blue Plate Specials",
+    href: "https://www.facebook.com/people/The-Blue-Plate-Specials/100063836958831/",
+  },
   // 17 September 2023.
   // Probably last Sunday Wok Truck this year.
   {
@@ -13,6 +55,13 @@ const events = [
     starts_at: "2023-09-17T11:00:00Z",
     text: "Woktruck &horbar; Asian Street Food",
     href: "https://www.facebook.com/profile.php?id=100089983001484",
+  },
+
+  // 11 September 2023.
+  {
+    starts_at: "2023-09-12T17:00:00Z",
+    text: "Monthly European Folk Tune Session",
+    href: "https://www.facebook.com/groups/587092358119118/permalink/2461765810651754/",
   },
 
   // 3 September 2023.
