@@ -59,7 +59,7 @@ const events = [
 
   // 11 September 2023.
   {
-    starts_at: "2023-09-12T17:00:00Z",
+    starts_at: "2023-09-11T17:00:00Z",
     text: "Monthly European Folk Tune Session",
     href: "https://www.facebook.com/groups/587092358119118/permalink/2461765810651754/",
   },
