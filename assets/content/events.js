@@ -27,6 +27,21 @@ const events = [
     text: "The Cruisers",
     href: "https://www.facebook.com/thecruisersrock",
   },
+  {
+    starts_at: "2023-10-15T12:00:00Z",
+    text: "Little Beer Festival",
+    href: "https://www.facebook.com/greendragonbungay",
+  },
+  {
+    starts_at: "2023-10-14T12:00:00Z",
+    text: "Little Beer Festival",
+    href: "https://www.facebook.com/greendragonbungay",
+  },
+  {
+    starts_at: "2023-10-13T12:00:00Z",
+    text: "Little Beer Festival",
+    href: "https://www.facebook.com/greendragonbungay",
+  },
   // 8 October 2023.
   {
     starts_at: "2023-10-08T13:30:00Z",
