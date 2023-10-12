@@ -43,7 +43,7 @@
 
       <template #cta>
         <gd-p>
-          <a href="/images/2023-06-06-green-dragon-summer-food-menu.jpg"
+          <a href="/images/2023-09-28-green-dragon-autumn-food-menu.jpg"
             >View our current menu</a
           >
         </gd-p>
