@@ -5,13 +5,13 @@
 const events = [
   // 28 December 2023.
   {
-    starts_at: "2023-11-11T15:00:00Z",
+    starts_at: "2023-12-28T15:00:00Z",
     text: "JC's Moonshine Band",
     href: "https://www.facebook.com/jcsmoonshineband",
   },
   // 17 December 2023.
   {
-    starts_at: "2023-11-11T15:00:00Z",
+    starts_at: "2023-12-17T15:00:00Z",
     text: "The Cruisers",
     href: "https://www.facebook.com/thecruisersrock",
   },
@@ -38,7 +38,7 @@ const events = [
     text: "Steve & Greta",
     href: "https://www.youtube.com/watch?v=vpJMR6hanh4",
   },
-  // 12 November 2023.
+  // 13 November 2023.
   {
     starts_at: "2023-11-13T17:00:00Z",
     text: "Monthly European Folk Tune Session",
