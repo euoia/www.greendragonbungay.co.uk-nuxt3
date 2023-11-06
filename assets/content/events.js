@@ -3,6 +3,53 @@
 //
 // Order is not important, grouped on front end.
 const events = [
+  // 28 December 2023.
+  {
+    starts_at: "2023-11-11T15:00:00Z",
+    text: "JC's Moonshine Band",
+    href: "https://www.facebook.com/jcsmoonshineband",
+  },
+  // 17 December 2023.
+  {
+    starts_at: "2023-11-11T15:00:00Z",
+    text: "The Cruisers",
+    href: "https://www.facebook.com/thecruisersrock",
+  },
+  // 11 December 2023.
+  {
+    starts_at: "2023-11-11T17:00:00Z",
+    text: "Monthly European Folk Tune Session",
+    href: "https://www.facebook.com/groups/587092358119118/permalink/2461765810651754/",
+  },
+  // 3 December 2023.
+  {
+    starts_at: "2023-12-03T14:30:00Z",
+    text: "Snords",
+  },
+  // 26 November 2023.
+  {
+    starts_at: "2023-11-26T14:30:00Z",
+    text: "Hot Stove 3",
+    href: "https://www.hotstove3.com/",
+  },
+  // 19 November 2023.
+  {
+    starts_at: "2023-11-19T14:30:00Z",
+    text: "Steve & Greta",
+    href: "https://www.youtube.com/watch?v=vpJMR6hanh4",
+  },
+  // 12 November 2023.
+  {
+    starts_at: "2023-11-13T17:00:00Z",
+    text: "Monthly European Folk Tune Session",
+    href: "https://www.facebook.com/groups/587092358119118/permalink/2461765810651754/",
+  },
+  // 12 November 2023.
+  {
+    starts_at: "2023-11-12T14:30:00Z",
+    text: "Murphy's Lore",
+    href: "https://www.murphyslore.co.uk/",
+  },
   // 5 November 2023.
   {
     starts_at: "2023-11-05T14:30:00Z",
