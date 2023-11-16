@@ -21,6 +21,11 @@ const events = [
     text: "Monthly European Folk Tune Session",
     href: "https://www.facebook.com/groups/587092358119118/permalink/2461765810651754/",
   },
+  // 9 December 2023.
+  {
+    starts_at: "2023-12-09T19:00:00Z",
+    text: "Christmas Disco with DJ Martin Tee",
+  },
   // 3 December 2023.
   {
     starts_at: "2023-12-03T14:30:00Z",
