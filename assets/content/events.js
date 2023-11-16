@@ -31,6 +31,11 @@ const events = [
     starts_at: "2023-12-03T14:30:00Z",
     text: "Snords",
   },
+  {
+    starts_at: "2023-12-03T12:30:00Z",
+    text: "Portugeuse Charcoal Barbecue Hog Roast with Tuga Flavours",
+    href: "https://www.facebook.com/profile.php?id=61551940102575"
+  },
   // 26 November 2023.
   {
     starts_at: "2023-11-26T14:30:00Z",
