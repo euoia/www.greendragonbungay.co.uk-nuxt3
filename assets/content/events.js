@@ -33,7 +33,7 @@ const events = [
   },
   {
     starts_at: "2023-12-03T12:30:00Z",
-    text: "Portugeuse Charcoal Barbecue Hog Roast with Tuga Flavours",
+    text: "Portuguese Charcoal Barbecue, Pig spit roast with Tuga Flavours",
     href: "https://www.facebook.com/profile.php?id=61551940102575"
   },
   // 26 November 2023.
