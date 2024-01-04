@@ -3,6 +3,12 @@
 //
 // Order is not important, grouped on front end.
 const events = [
+  // 25 January 2024.
+  {
+    starts_at: "2024-01-25T19:00:00Z",
+    text: "Burns Night Supper - Booking Essential",
+    href: "https://www.facebook.com/events/1754886874956008",
+  },
   // 28 December 2023.
   {
     starts_at: "2023-12-28T15:00:00Z",
@@ -34,7 +40,7 @@ const events = [
   {
     starts_at: "2023-12-03T12:30:00Z",
     text: "Portuguese Charcoal Barbecue, Pig spit roast with Tuga Flavours",
-    href: "https://www.facebook.com/profile.php?id=61551940102575"
+    href: "https://www.facebook.com/profile.php?id=61551940102575",
   },
   // 26 November 2023.
   {
