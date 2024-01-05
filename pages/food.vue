@@ -9,6 +9,13 @@
       alt: 'Deep Fried Brie, Bungay, Suffolk, logo',
     }"
   >
+    <gd-section title="Kitchen closed for January" cta-position="top">
+      <gd-p>
+        Our lovely chef Ian is taking a short well-deserverd break, and normal
+        service will resume from Thursday 1st February.
+      </gd-p>
+    </gd-section>
+
     <gd-section title="Food tells a story" cta-position="top">
       <gd-p>
         Our menu combines comforting favourites with unique elements that each
@@ -44,12 +51,19 @@
       <template #cta>
         <gd-p>
           <a href="/images/2023-11-21-green-dragon-winter-food-menu.jpg"
+            >View our usual menu</a
+          >
+        </gd-p>
+        <!---
+        <gd-p>
+          <a href="/images/2023-11-21-green-dragon-winter-food-menu.jpg"
             >View our current menu</a
           >
         </gd-p>
         <gd-p>
           <a href="https://www.gdeat.co.uk">Order online</a>
         </gd-p>
+-->
       </template>
     </gd-section>
 
