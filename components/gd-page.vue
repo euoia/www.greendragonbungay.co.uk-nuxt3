@@ -17,7 +17,11 @@ import {
       </div>
 
       <div ref="parallax" class="text-overlay-box" :style="parallaxStyle">
-        <nuxt-img class="logo-image" :src="logoImage.src" :alt="logoImage.alt" />
+        <nuxt-img
+          class="logo-image"
+          :src="logoImage.src"
+          :alt="logoImage.alt"
+        />
       </div>
     </header>
 
@@ -47,7 +51,8 @@ import {
           {{ addressLine }}
         </div>
         <div>
-          <a href="https://goo.gl/maps/kXThU75PBHfe7xJJ9" target="_blank">Map
+          <a href="https://goo.gl/maps/kXThU75PBHfe7xJJ9" target="_blank"
+            >Map
             <Icon name="material-symbols:location-on-outline" />
           </a>
         </div>
@@ -73,10 +78,13 @@ import {
           <div>12&nbsp;&horbar;&nbsp;12</div>
           <div>Sun</div>
           <div>12&nbsp;&horbar;&nbsp;10</div>
-          <div><b>Kitchen</b></div>
           <div></div>
+          <div class="span-2">kitchen closed January 2024</div>
+          <div class="span-2">reopening Feb 1 2024</div>
+          <!--
           <div>Thu &horbar; Sat</div>
           <div>12&nbsp;&horbar;&nbsp;8</div>
+          -->
         </div>
       </section>
 
@@ -274,6 +282,10 @@ export default {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 0.5em;
+
+      .span-2 {
+        grid-column: span 2;
+      }
     }
   }
 

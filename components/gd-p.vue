@@ -19,7 +19,7 @@ export default {
   },
   computed: {},
   watch: {},
-  async created() { },
+  async created() {},
 };
 </script>
 

@@ -7,15 +7,26 @@
     <!-- When using 2 images, they should be portrait or landscape and there should be an attribute to specify which. -->
     <!-- When using 4 images, they should square. -->
     <div v-if="images.length === 1" class="images-container">
-      <nuxt-img class="image" :src="images[0].src" :alt="images[0].alt" sizes="lg:1536px" />
+      <nuxt-img
+        class="image"
+        :src="images[0].src"
+        :alt="images[0].alt"
+        sizes="lg:1536px"
+      />
     </div>
 
-    <div v-if="images.length === 2 && orientation === 'landscape'" class="images-container">
+    <div
+      v-if="images.length === 2 && orientation === 'landscape'"
+      class="images-container"
+    >
       <nuxt-img class="image" :src="images[0].src" :alt="images[0].alt" />
       <nuxt-img class="image" :src="images[1].src" :alt="images[1].alt" />
     </div>
 
-    <div v-if="images.length === 2 && orientation === 'portrait'" class="images-container">
+    <div
+      v-if="images.length === 2 && orientation === 'portrait'"
+      class="images-container"
+    >
       <nuxt-img class="image" :src="images[0].src" :alt="images[0].alt" />
       <nuxt-img class="image" :src="images[1].src" :alt="images[1].alt" />
     </div>
@@ -29,7 +40,10 @@
     <!-- Variant 1: landscape-top TODO -->
     <!-- Variant 2: landscape-bottom TODO -->
     <!-- Variant 3: portrait-left -->
-    <div v-if="images.length === 3 && orientation === 'portrait-left'" class="images-container three-portrait-left">
+    <div
+      v-if="images.length === 3 && orientation === 'portrait-left'"
+      class="images-container three-portrait-left"
+    >
       <div class="col">
         <nuxt-img class="image" :src="images[0].src" :alt="images[0].alt" />
       </div>
@@ -41,11 +55,34 @@
     <!-- Variant 4: portrait-right TODO -->
 
     <div v-if="images.length === 4" class="images-container four-images">
-      <nuxt-img class="image" :src="images[0].src" :alt="images[0].alt" sizes="lg:320px" />
-      <nuxt-img class="image" :src="images[1].src" :alt="images[1].alt" sizes="lg:320px" />
-      <nuxt-img class="image" :src="images[2].src" :alt="images[2].alt" sizes="lg:320px" />
-      <nuxt-img class="image" :src="images[3].src" :alt="images[3].alt" sizes="lg:320px" />
+      <nuxt-img
+        class="image"
+        :src="images[0].src"
+        :alt="images[0].alt"
+        sizes="lg:320px"
+      />
+      <nuxt-img
+        class="image"
+        :src="images[1].src"
+        :alt="images[1].alt"
+        sizes="lg:320px"
+      />
+      <nuxt-img
+        class="image"
+        :src="images[2].src"
+        :alt="images[2].alt"
+        sizes="lg:320px"
+      />
+      <nuxt-img
+        class="image"
+        :src="images[3].src"
+        :alt="images[3].alt"
+        sizes="lg:320px"
+      />
     </div>
+  </div>
+  <div v-if="caption" class="caption">
+    {{ caption }}
   </div>
 </template>
 
@@ -65,13 +102,18 @@ export default {
         return ["landscape", "portrait", "portrait-left"].includes(value);
       },
     },
+    caption: {
+      type: String,
+      required: false,
+      default: null,
+    },
   },
   data() {
     return {};
   },
   computed: {},
   watch: {},
-  async created() { },
+  async created() {},
 };
 </script>
 
@@ -127,5 +169,10 @@ export default {
       grid-gap: var(--gap);
     }
   }
+}
+
+.caption {
+  text-align: center;
+  margin-top: 0.5rem;
 }
 </style>

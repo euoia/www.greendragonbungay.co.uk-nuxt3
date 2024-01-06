@@ -10,6 +10,7 @@ body {
   --body-font-size: 22px;
   --body-color: black;
   --body-background-color: #ffffff;
+  --text-muted: #474752;
 
   --max-page-width: 1400px;
 
@@ -71,4 +72,8 @@ whitespace-nowrap {
 .flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.muted {
+  color: var(--text-muted);
 }

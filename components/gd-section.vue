@@ -4,12 +4,16 @@
     :class="{ span, half: span === false, [variant]: variant !== null }"
   >
     <div v-if="images !== null" class="half">
-      <gd-images :images="images" :orientation="imagesOrientation" />
+      <gd-images
+        :images="images"
+        :orientation="imagesOrientation"
+        :caption="imagesCaption"
+      />
     </div>
 
     <div
       class="content"
-      :class="{ half: images !== null, full: images === null, span }"
+      :class="{ half: images !== null, full: images === null, span, left }"
       v-if="hasContentSlot"
     >
       <div class="content-title" v-if="title">
@@ -98,6 +102,16 @@ export default {
       type: Boolean,
       required: false,
       default: false,
+    },
+    left: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    imagesCaption: {
+      type: String,
+      required: false,
+      default: null,
     },
   },
   data() {
@@ -207,6 +221,10 @@ export default {
       gap: 2em;
       padding-left: 1em;
       padding-right: 1em;
+    }
+
+    &.left {
+      text-align: left;
     }
   }
 

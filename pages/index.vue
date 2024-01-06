@@ -79,6 +79,12 @@
       ]"
     >
       <gd-p
+        ><i
+          >Please note our kitchen is closed for January 2024 and will reopen on
+          Thursday 1<sup>st</sup> February 2024.</i
+        >
+      </gd-p>
+      <gd-p
         >Chef Ian Cooke developed a diverse menu with unique ingredients such as
         artisan Portugeuse bread and featuring international favourites like
         Canadian Poutine.
@@ -134,6 +140,13 @@
       title="News"
       :images="[{ src: '/images/pump-clips-square.jpg', alt: 'Pump clips' }]"
     >
+      <gd-p icon="ri:beer-fill">
+        <span class="muted">January 2024</span> We are hiring for a brewer
+        <NuxtLink to="2024-01-06-green-dragon-brewer-job"
+          >click to read more</NuxtLink
+        >.
+      </gd-p>
+
       <gd-p icon="fa6-solid:trophy">
         We won Town Pub of the Year in CAMRA's North East Suffolk pub awards
         2023!
