@@ -3,11 +3,41 @@
 //
 // Order is not important, grouped on front end.
 const events = [
+  // 17 March 2024
+  {
+    starts_at: "2024-03-17T15:00:00Z",
+    text: "JC's Moonshine Band",
+    href: "https://www.facebook.com/jcsmoonshineband",
+  },
+  // 03 March 2024
+  {
+    starts_at: "2024-03-03T15:00:00Z",
+    text: "Flann",
+    href: "https://www.flann.org/",
+  },
+  // 18 February 2024.
+  {
+    starts_at: "2024-02-18T15:00:00Z",
+    text: "Murphy's Lore",
+    href: "https://www.murphyslore.co.uk/",
+  },
+  // 4 February 2024.
+  {
+    starts_at: "2024-02-04T15:00:00Z",
+    text: "Steve & Greta",
+    href: "https://www.youtube.com/watch?v=vpJMR6hanh4",
+  },
   // 25 January 2024.
   {
     starts_at: "2024-01-25T19:00:00Z",
     text: "Burns Night Supper - Booking Essential",
     href: "https://www.facebook.com/events/1754886874956008",
+  },
+  // 21 January 2024.
+  {
+    starts_at: "2024-01-21T15:00:00Z",
+    text: "Hot Stove 3",
+    href: "https://www.hotstove3.com/",
   },
   // 28 December 2023.
   {
