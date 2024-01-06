@@ -1,3 +1,16 @@
+<script setup>
+useHead({
+  title: "Brewer job | Green Dragon Bungay | Pub & Brewery | Suffolk",
+  meta: [
+    {
+      name: "description",
+      content:
+        "The Green Dragon in Bungay is hiring a brewer to produce its award winning ales.",
+    },
+  ],
+});
+</script>
+
 <template>
   <gd-page
     :banner-image="{
@@ -97,15 +110,7 @@
 </template>
 
 <script>
-export default {
-  props: {},
-  data() {
-    return {};
-  },
-  computed: {},
-  watch: {},
-  async created() {},
-};
+export default {};
 </script>
 
 <style lang="scss" scoped></style>

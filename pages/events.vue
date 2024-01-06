@@ -1,5 +1,16 @@
 <script setup>
 import events from "~/assets/content/events.js";
+
+useHead({
+  title: "Events | Green Dragon Bungay | Pub & Brewery | Suffolk",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Events at the Green Dragon, Bungay, Suffolk. Find out about our upcoming events, live music, and more.",
+    },
+  ],
+});
 </script>
 
 <template>

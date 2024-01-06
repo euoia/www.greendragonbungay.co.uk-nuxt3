@@ -1,3 +1,16 @@
+<script setup>
+useHead({
+  title: "Food | Green Dragon Bungay | Pub & Brewery | Suffolk",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Food from the Green Dragon, Bungay, Suffolk. Find out about our menu, food trucks, and more.",
+    },
+  ],
+});
+</script>
+
 <template>
   <gd-page
     :banner-image="{
