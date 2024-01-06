@@ -1,5 +1,13 @@
 const newsItems = [
   {
+    date: "2024-01-05 12:00:00",
+    icon: "ri:beer-fill",
+    title: "We are hiring for a brewer",
+    paragraphs: [
+      "<a href='/2024-01-06-green-dragon-brewer-job'>click to read more</a>",
+    ],
+  },
+  {
     date: "2023-03-16 12:00:00",
     icon: "fa6-solid:trophy",
     title:
