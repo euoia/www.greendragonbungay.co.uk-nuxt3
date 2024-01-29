@@ -9,11 +9,25 @@ const events = [
     text: "JC's Moonshine Band",
     href: "https://www.facebook.com/jcsmoonshineband",
   },
-  // 03 March 2024
+  // 09 March 2024.
   {
-    starts_at: "2024-03-03T15:00:00Z",
-    text: "Flann",
+    starts_at: "2024-03-09T20:00:00Z",
+    text: "80s Party Night with DJ Martin Tee",
+    href: "https://www.facebook.com/events/893200992203157",
+  },
+
+  // 03 March 2024.
+  {
+    starts_at: "2024-03-03T14:30:00Z",
+    text: "Flánn",
     href: "https://www.flann.org/",
+  },
+
+  // 28 February 2024.
+  // TODO: Event URL.
+  {
+    starts_at: "2024-02-28T19:00:00Z",
+    text: "Wok Truck Presents: Sushi Night",
   },
   // 18 February 2024.
   {
