@@ -23,6 +23,12 @@ const events = [
     href: "https://www.flann.org/",
   },
 
+  {
+    starts_at: "2024-03-03T13:00:00Z",
+    text: "Beezys Catering Kitchen",
+    href: "https://www.facebook.com/beezyscateringkitchen",
+  },
+
   // 28 February 2024.
   // TODO: Event URL.
   {
