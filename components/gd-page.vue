@@ -79,8 +79,9 @@ import {
           <div>Sun</div>
           <div>12&nbsp;&horbar;&nbsp;10</div>
           <div></div>
-          <div class="span-2">kitchen closed January 2024</div>
+          <!-- <div class="span-2">kitchen closed January 2024</div>
           <div class="span-2">reopening Feb 1 2024</div>
+          -->
           <!--
           <div>Thu &horbar; Sat</div>
           <div>12&nbsp;&horbar;&nbsp;8</div>

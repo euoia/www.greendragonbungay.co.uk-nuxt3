@@ -22,12 +22,14 @@ useHead({
       alt: 'Deep Fried Brie, Bungay, Suffolk, logo',
     }"
   >
+    <!--
     <gd-section title="Kitchen closed for January" cta-position="top">
       <gd-p>
         Our lovely chef Ian is taking a short well-deserverd break, and normal
         service will resume from Thursday 1st February.
       </gd-p>
     </gd-section>
+-->
 
     <gd-section title="Food tells a story" cta-position="top">
       <gd-p>
