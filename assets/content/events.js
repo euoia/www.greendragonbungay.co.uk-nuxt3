@@ -1,25 +1,30 @@
 // Note that times are UTC, so please accommodate BST.
+// 14:30 BST is 13:30 UTC.
+//
+// BST comes into effect on the last Sunday in March and ends on the last
+// Sunday in October.
 // TODO: Would be easier if times are Europe/London.
 //
 // Order is not important, grouped on front end.
 const events = [
   // 21 April 2024.
   {
-    starts_at: "2024-04-21T15:30:00Z",
+    starts_at: "2024-04-21T13:30:00Z",
     text: "The Likes of Us",
     href: "https://www.facebook.com/profile.php?id=100039241282655",
   },
   // 14 April 2024.
   {
-    starts_at: "2024-04-14T15:30:00Z",
+    starts_at: "2024-04-14T13:30:00Z",
     text: "Generation Gap",
   },
   // 7 April 2024.
   {
-    starts_at: "2024-04-07T15:30:00Z",
+    starts_at: "2024-04-07T13:30:00Z",
     text: "High Symes & Miss Demeanor",
     href: "https://www.youtube.com/watch?v=zm0yNIf_k5k",
   },
+  // British Summer Time starts.
   // 31 March 2024
   {
     starts_at: "2024-03-31T14:30:00Z",
