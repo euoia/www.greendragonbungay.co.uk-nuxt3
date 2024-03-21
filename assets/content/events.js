@@ -3,6 +3,34 @@
 //
 // Order is not important, grouped on front end.
 const events = [
+  // 21 April 2024.
+  {
+    starts_at: "2024-04-21T15:30:00Z",
+    text: "The Likes of Us",
+    href: "https://www.facebook.com/profile.php?id=100039241282655",
+  },
+  // 14 April 2024.
+  {
+    starts_at: "2024-04-14T15:30:00Z",
+    text: "Generation Gap",
+  },
+  // 7 April 2024.
+  {
+    starts_at: "2024-04-07T15:30:00Z",
+    text: "High Symes & Miss Demeanor",
+    href: "https://www.youtube.com/watch?v=zm0yNIf_k5k",
+  },
+  // 31 March 2024
+  {
+    starts_at: "2024-03-31T14:30:00Z",
+    text: "Blue Plate Specials",
+    href: "https://www.facebook.com/people/The-Blue-Plate-Specials/100063836958831/",
+  },
+  // 24 March 2024
+  {
+    starts_at: "2024-03-24T14:30:00Z",
+    text: "Treacle Miners",
+  },
   // 17 March 2024
   {
     starts_at: "2024-03-17T15:00:00Z",
