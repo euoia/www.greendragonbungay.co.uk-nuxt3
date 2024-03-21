@@ -27,7 +27,7 @@ const events = [
   // British Summer Time starts.
   // 31 March 2024
   {
-    starts_at: "2024-03-31T14:30:00Z",
+    starts_at: "2024-03-31T13:30:00Z",
     text: "Blue Plate Specials",
     href: "https://www.facebook.com/people/The-Blue-Plate-Specials/100063836958831/",
   },
