@@ -7,6 +7,50 @@
 //
 // Order is not important, grouped on front end.
 const events = [
+  //  9 June 2024.
+  {
+    starts_at: "2024-06-09T20:00:00Z",
+    text: "High Points!",
+    href: "https://www.highpointsband.com/",
+  },
+  // 2 June 2024.
+  {
+    starts_at: "2024-06-02T14:30:00Z",
+    text: "The Cruisers",
+    href: "https://www.facebook.com/thecruisersrock",
+  },
+  // 26 May 2024.
+  {
+    starts_at: "2024-05-26T13:00:00Z",
+    text: "Portuguese Charcoal Barbecue, Pig spit roast with Tuga Flavours",
+    href: "https://www.facebook.com/profile.php?id=61551940102575",
+  },
+  {
+    starts_at: "2024-05-26T13:30:00Z",
+    text: "The Snords",
+  },
+  {
+    starts_at: "2024-05-26T15:30:00Z",
+    text: "Lizzie & The List Band",
+    href: "https://www.facebook.com/LizzieAndTheListBand/",
+  },
+
+  // 19 May 2024.
+  {
+    starts_at: "2024-05-19T13:30:00Z",
+    text: "Blue Plate Specials",
+    href: "https://www.facebook.com/people/The-Blue-Plate-Specials/100063836958831/",
+  },
+  // 12 May 2024.
+  {
+    starts_at: "2024-05-12T13:30:00Z",
+    text: "Murphy's Lore",
+  },
+  // 5 May 2024.
+  {
+    starts_at: "2024-05-05T13:30:00Z",
+    text: "Underdogs",
+  },
   // 21 April 2024.
   {
     starts_at: "2024-04-21T13:30:00Z",

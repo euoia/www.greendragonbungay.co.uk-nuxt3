@@ -141,8 +141,8 @@
       :images="[{ src: '/images/pump-clips-square.jpg', alt: 'Pump clips' }]"
     >
       <gd-p icon="ri:beer-fill">
-        <span class="muted">January 2024</span> We are hiring for a brewer
-        <NuxtLink to="2024-01-06-green-dragon-brewer-job"
+        <span class="muted">January 2024</span> We are hiring in our kitchen
+        <NuxtLink to="2024-05-01-green-dragon-kitchen-jobs"
           >click to read more</NuxtLink
         >.
       </gd-p>

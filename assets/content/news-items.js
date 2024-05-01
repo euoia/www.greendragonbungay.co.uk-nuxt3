@@ -1,6 +1,14 @@
 const newsItems = [
   {
     date: "2024-01-05 12:00:00",
+    icon: "ph:fork-knife",
+    title: "We are hiring in the kitchen",
+    paragraphs: [
+      "<a href='/2024-05-01-green-dragon-kitchen-jobs'>click to read more</a>",
+    ],
+  },
+  {
+    date: "2024-01-05 12:00:00",
     icon: "ri:beer-fill",
     title: "We are hiring for a brewer",
     paragraphs: [
