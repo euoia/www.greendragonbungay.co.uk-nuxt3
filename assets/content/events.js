@@ -26,12 +26,12 @@ const events = [
     href: "https://www.facebook.com/profile.php?id=61551940102575",
   },
   {
-    starts_at: "2024-05-26T13:30:00Z",
+    starts_at: "2024-05-26T16:00:00Z",
     text: "The Snords",
   },
   {
-    starts_at: "2024-05-26T15:30:00Z",
-    text: "Lizzie & The List Band",
+    starts_at: "2024-05-26T12:00:00Z",
+    text: "Lizzie And The List Band",
     href: "https://www.facebook.com/LizzieAndTheListBand/",
   },
 
