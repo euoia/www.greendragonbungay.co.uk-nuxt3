@@ -21,8 +21,8 @@ const events = [
   },
   // 26 May 2024.
   {
-    starts_at: "2024-05-26T13:00:00Z",
-    text: "Portuguese Charcoal Barbecue, Pig spit roast with Tuga Flavours",
+    starts_at: "2024-05-26T11:00:00Z",
+    text: "Portuguese charcoal pig roast by Tuga Flavours",
     href: "https://www.facebook.com/profile.php?id=61551940102575",
   },
   {
@@ -45,6 +45,7 @@ const events = [
   {
     starts_at: "2024-05-12T13:30:00Z",
     text: "Murphy's Lore",
+    href: "https://www.murphyslore.co.uk/",
   },
   // 5 May 2024.
   {
@@ -166,7 +167,7 @@ const events = [
   },
   {
     starts_at: "2023-12-03T12:30:00Z",
-    text: "Portuguese Charcoal Barbecue, Pig spit roast with Tuga Flavours",
+    text: "Portuguese Barbecue, Pig spit roast with Tuga Flavours",
     href: "https://www.facebook.com/profile.php?id=61551940102575",
   },
   // 26 November 2023.
